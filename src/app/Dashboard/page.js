@@ -7,6 +7,7 @@ import CategoryCard from '../components/category-card'
 import ItemCard from '../components/item-card'
 import BlogPostCard from '../components/blog-post-card'
 import palletbox from '../image/palletbox.js';
+import skidded from '../image/skidded.js'
 import './styles.css'
 
 const Dashboard = (props) => {
@@ -56,7 +57,7 @@ const Dashboard = (props) => {
             <div data-role="MobileMenu" className={`home-mobile-menu ${menuOpen ? 'active' : ''}`}>
               <div className="home-nav">
                 <div className="home-container02">
-                  <span className="home-logo-center1">MOBILLIO</span>
+                  <span className="home-logo-center1">Vijay Pallet & Box</span>
                   <div
                     data-role="CloseMobileMenu"
                     className="home-close-mobile-menu"
@@ -68,15 +69,15 @@ const Dashboard = (props) => {
                   </div>
                 </div>
                 <div className="home-middle1">
-                  <span className="home-text06">SHOP</span>
-                  <span className="home-text07">LOOKBOOK</span>
-                  <span className="home-text08">SPECIAL</span>
-                  <span className="home-text09">ABOUT</span>
-                  <span className="home-text10">BLOG</span>
+                  <span className="home-text06">ABOUT</span>
+                  <span className="home-text07">VISION</span>
+                  <span className="home-text08">PALLETS</span>
+                  <span className="home-text09">BOXES</span>
+                  <span className="home-text10">POLICY</span>
                   <span className="home-text11">CONTACT</span>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <svg
                   viewBox="0 0 950.8571428571428 1024"
                   className="home-icon04"
@@ -95,7 +96,7 @@ const Dashboard = (props) => {
                 >
                   <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                 </svg>
-              </div>
+              </div> */}
             </div>
           </header>
         </div>
@@ -111,15 +112,15 @@ const Dashboard = (props) => {
                       className="home-image4"
                     />
                     <span className="home-text12">
-                      <span>furniture</span>
+                      <span>Leading Manufacturing Company</span>
                       <br></br>
-                      <span>trends - 2022</span>
+                      <span>of Wooden pallet & Boxes</span>
                     </span>
                   </div>
-                  <h1 className="home-text16 Heading-1">Yellowstone</h1>
+                  <h1 className="home-text16 Heading-1">Durability</h1>
                   <div className="home-container04">
                     <span className="home-text17">FROM</span>
-                    <span className="home-text18">$339</span>
+                    <span className="home-text18">₹999</span>
                   </div>
                   <div className="home-btn-group">
                     <button className="button">Explore the collection</button>
@@ -136,11 +137,11 @@ const Dashboard = (props) => {
           <div className="section-container column">
             <div className="max-width-container">
               <SectionHeading
-                heading="SHOP BY CATEGORIES"
+                heading="SHOP BY BOX CATEGORIES"
                 subtitle="Start shopping based on the categories you are interested in"
               ></SectionHeading>
               <div className="home-cards-container">
-                <CategoryCard categoryImg="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxkZXNrc3xlbnwwfHx8fDE2NTI4MjE5MDk&amp;ixlib=rb-1.2.1&amp;h=200"></CategoryCard>
+                <CategoryCard name = "Skidded Base Box" categoryImg={skidded}></CategoryCard>
                 <CategoryCard name="Chairs"></CategoryCard>
                 <CategoryCard
                   name="Tables"
@@ -158,10 +159,10 @@ const Dashboard = (props) => {
                   name="Decoration"
                   categoryImg="https://images.unsplash.com/photo-1558882224-dda166733046?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fGRlY29yYXRpb258ZW58MHx8fHwxNjUyODIyMDkx&amp;ixlib=rb-1.2.1&amp;h=200"
                 ></CategoryCard>
-                <CategoryCard
+                {/* <CategoryCard
                   name="Collections"
                   categoryImg="https://images.unsplash.com/photo-1597696929736-6d13bed8e6a8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxjb2xsZWN0aW9uc3xlbnwwfHx8fDE2NTI4MjIxMTE&amp;ixlib=rb-1.2.1&amp;h=200"
-                ></CategoryCard>
+                ></CategoryCard> */}
               </div>
             </div>
             <div className="home-banner">
