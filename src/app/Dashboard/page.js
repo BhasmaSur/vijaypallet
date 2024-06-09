@@ -7,8 +7,12 @@ import CategoryCard from '../components/category-card'
 import ItemCard from '../components/item-card'
 import BlogPostCard from '../components/blog-post-card'
 import palletbox from '../image/palletbox.js';
-import skidded from '../image/skidded.js'
+import skidded from '../image/skidded.js';
+import cratetypebox from '../image/cratetypebox';
+import nailedpine from '../image/nailedpine'
 import './styles.css'
+import nailless from '../image/nailless'
+import standard from '../image/standard'
 
 const Dashboard = (props) => {
 
@@ -142,23 +146,23 @@ const Dashboard = (props) => {
               ></SectionHeading>
               <div className="home-cards-container">
                 <CategoryCard name = "Skidded Base Box" categoryImg={skidded}></CategoryCard>
-                <CategoryCard name="Chairs"></CategoryCard>
+                <CategoryCard name="Crate Type Box" categoryImg = {cratetypebox}></CategoryCard>
                 <CategoryCard
-                  name="Tables"
-                  categoryImg="https://images.unsplash.com/photo-1594125674956-61a9b49c8ecc?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHx0YWJsZXxlbnwwfHx8fDE2NTI4MjE5ODQ&amp;ixlib=rb-1.2.1&amp;h=200"
+                  name="Nailed Pine & Plywood Boxes"
+                  categoryImg={nailedpine}
                 ></CategoryCard>
                 <CategoryCard
-                  name="Lamps"
-                  categoryImg="https://images.unsplash.com/photo-1573469635233-7974cb21a915?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE3fHxsYW1wc3xlbnwwfHx8fDE2NTI4MjIwMTY&amp;ixlib=rb-1.2.1&amp;h=200"
+                  name="Nailless Plywood Box"
+                  categoryImg={nailless}
                 ></CategoryCard>
                 <CategoryCard
-                  name="Plants"
-                  categoryImg="https://images.unsplash.com/photo-1558603668-6570496b66f8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDU3fHxwbGFudHN8ZW58MHx8fHwxNjUyODIyMDcy&amp;ixlib=rb-1.2.1&amp;h=200"
+                  name="Standard Box"
+                  categoryImg={standard}
                 ></CategoryCard>
-                <CategoryCard
+                {/* <CategoryCard
                   name="Decoration"
                   categoryImg="https://images.unsplash.com/photo-1558882224-dda166733046?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fGRlY29yYXRpb258ZW58MHx8fHwxNjUyODIyMDkx&amp;ixlib=rb-1.2.1&amp;h=200"
-                ></CategoryCard>
+                ></CategoryCard> */}
                 {/* <CategoryCard
                   name="Collections"
                   categoryImg="https://images.unsplash.com/photo-1597696929736-6d13bed8e6a8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxjb2xsZWN0aW9uc3xlbnwwfHx8fDE2NTI4MjIxMTE&amp;ixlib=rb-1.2.1&amp;h=200"
