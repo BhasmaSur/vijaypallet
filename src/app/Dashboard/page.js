@@ -18,6 +18,13 @@ import nailedpine2 from "../image/nailedpine2";
 import heavydutybox from "../image/heavydutybox";
 import pallet from "../image/pallet";
 import cratetypebox2 from "../image/cratetypebox2";
+import industrybox from "../image/industrybox";
+import lookbook from "../image/lookbook";
+import european from "../image/european";
+import pinewoodpallet from "../image/pinewoodpallet";
+import fourwaypallet from "../image/fourwaypallet";
+import rubberwoordcrate from "../image/rubberwoodcrate";
+import woodenpackagingcrate from "../image/woodenpackagingcrate";
 
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -174,14 +181,6 @@ const Dashboard = (props) => {
                   name="Standard Box"
                   categoryImg={standard}
                 ></CategoryCard>
-                {/* <CategoryCard
-                  name="Decoration"
-                  categoryImg="https://images.unsplash.com/photo-1558882224-dda166733046?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fGRlY29yYXRpb258ZW58MHx8fHwxNjUyODIyMDkx&amp;ixlib=rb-1.2.1&amp;h=200"
-                ></CategoryCard> */}
-                {/* <CategoryCard
-                  name="Collections"
-                  categoryImg="https://images.unsplash.com/photo-1597696929736-6d13bed8e6a8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxjb2xsZWN0aW9uc3xlbnwwfHx8fDE2NTI4MjIxMTE&amp;ixlib=rb-1.2.1&amp;h=200"
-                ></CategoryCard> */}
               </div>
             </div>
             <div className="home-banner">
@@ -233,6 +232,37 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
+          <br/>
+          <br/>
+          <div className="max-width-container">
+              <SectionHeading
+                heading="SHOP BY PALLET & CRATES"
+                subtitle="Start shopping based on the categories you are interested in"
+              ></SectionHeading>
+              <div className="home-cards-container">
+                <CategoryCard
+                  name="European 4 Way Pallet"
+                  categoryImg={european}
+                ></CategoryCard>
+                <CategoryCard
+                  name="Pine Wood Pallet"
+                  categoryImg={pinewoodpallet}
+                ></CategoryCard>
+                <CategoryCard
+                  name="Fourway Close Board Pallet"
+                  categoryImg={fourwaypallet}
+                ></CategoryCard>
+                <CategoryCard
+                  name="Rubber Wood Crate"
+                  categoryImg={rubberwoordcrate}
+                ></CategoryCard>
+                <CategoryCard
+                  name="Wooden Packaging Crate"
+                  categoryImg={woodenpackagingcrate}
+                ></CategoryCard>
+              </div>
+            </div>
+
           <div className="section-container">
             <div className="max-width-container">
               <SectionHeading></SectionHeading>
@@ -250,16 +280,16 @@ const Dashboard = (props) => {
                     <div className="home-left2">
                       <ItemCard
                         name="Plywood Box"
-                        value = "999"
+                        value="999"
                         imageSrc={nailedpine2}
                         rootClassName="rootClassName2"
                       ></ItemCard>
                     </div>
                     <div className="home-right2">
                       <ItemCard
-                        name="Heavy Duty Wooden Box"
+                        name="Industry Wooden Box"
                         value="799"
-                        imageSrc = {heavydutybox}
+                        imageSrc={industrybox}
                         rootClassName="rootClassName3"
                       ></ItemCard>
                     </div>
@@ -289,18 +319,20 @@ const Dashboard = (props) => {
           <div className="home-full-width-banner section-container">
             <div className="home-left4">
               <div className="home-content">
-                <span className="home-text29">LOOKBOOKS</span>
+                <span className="home-text29">OUR FACILITY</span>
                 <span className="home-text30">
-                  Carefully curated furniture, well matched in style and looks
+                  Discover our state-of-the-art production facility, where
+                  innovation meets quality
                 </span>
               </div>
-              <div className="home-btn button">
+              {/* <div className="home-btn button">
                 <span className="home-text31">Explore now</span>
-              </div>
+              </div> */}
             </div>
-            <img /> {/* here background image will be there from broucher */}
+            <img alt="VPB" className="home-image6" src={lookbook} />{" "}
+            {/* here background image will be there from broucher */}
           </div>
-          <div className="section-container">
+          {/* <div className="section-container">
             <div className="max-width-container">
               <SectionHeading
                 heading="Our blog"
@@ -324,7 +356,7 @@ const Dashboard = (props) => {
                 ></BlogPostCard>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="home-footer">
           <div className="max-width-container">
