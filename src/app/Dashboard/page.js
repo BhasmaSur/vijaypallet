@@ -1,26 +1,30 @@
-"use client"
-import React, { useState } from 'react'
-import Head from 'next/head'
+"use client";
+import React, { useState } from "react";
+import Head from "next/head";
 
-import SectionHeading from '../components/section-heading'
-import CategoryCard from '../components/category-card'
-import ItemCard from '../components/item-card'
-import BlogPostCard from '../components/blog-post-card'
-import palletbox from '../image/palletbox.js';
-import skidded from '../image/skidded.js';
-import cratetypebox from '../image/cratetypebox';
-import nailedpine from '../image/nailedpine'
-import './styles.css'
-import nailless from '../image/nailless'
-import standard from '../image/standard'
+import SectionHeading from "../components/section-heading";
+import CategoryCard from "../components/category-card";
+import ItemCard from "../components/item-card";
+import BlogPostCard from "../components/blog-post-card";
+import palletbox from "../image/palletbox.js";
+import skidded from "../image/skidded.js";
+import cratetypebox from "../image/cratetypebox";
+import nailedpine from "../image/nailedpine";
+import "./styles.css";
+import nailless from "../image/nailless";
+import standard from "../image/standard";
+import cabledrums from "../image/cabledrums";
+import nailedpine2 from "../image/nailedpine2";
+import heavydutybox from "../image/heavydutybox";
+import pallet from "../image/pallet";
+import cratetypebox2 from "../image/cratetypebox2";
 
 const Dashboard = (props) => {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <>
@@ -35,7 +39,6 @@ const Dashboard = (props) => {
             className="home-header max-width-container"
           >
             <div className="home-navbar1">
-        
               <div className="home-middle">
                 <div className="home-left">
                   <span className="navbar-link">ABOUT</span>
@@ -49,16 +52,21 @@ const Dashboard = (props) => {
                   <span className="navbar-link">CONTACT</span>
                 </div>
               </div>
-              <div className="home-icons home-image1">
-               
-              </div>
+              <div className="home-icons home-image1"></div>
             </div>
-            <div data-role="BurgerMenu" className="home-burger-menu" onClick={toggleMenu}>
+            <div
+              data-role="BurgerMenu"
+              className="home-burger-menu"
+              onClick={toggleMenu}
+            >
               <svg viewBox="0 0 1024 1024" className="home-icon">
                 <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
               </svg>
             </div>
-            <div data-role="MobileMenu" className={`home-mobile-menu ${menuOpen ? 'active' : ''}`}>
+            <div
+              data-role="MobileMenu"
+              className={`home-mobile-menu ${menuOpen ? "active" : ""}`}
+            >
               <div className="home-nav">
                 <div className="home-container02">
                   <span className="home-logo-center1">Vijay Pallet & Box</span>
@@ -130,11 +138,12 @@ const Dashboard = (props) => {
                     <button className="button">Explore the collection</button>
                   </div>
                 </div>
-                 <img
-                    alt = "Wooden pallet and box"
-                    src = {palletbox}
-                    className = "home-image5"
-                 />     {/* here background image is there   */}
+                <img
+                  alt="Wooden pallet and box"
+                  src={palletbox}
+                  className="home-image5"
+                />{" "}
+                {/* here background image is there   */}
               </div>
             </div>
           </div>
@@ -145,8 +154,14 @@ const Dashboard = (props) => {
                 subtitle="Start shopping based on the categories you are interested in"
               ></SectionHeading>
               <div className="home-cards-container">
-                <CategoryCard name = "Skidded Base Box" categoryImg={skidded}></CategoryCard>
-                <CategoryCard name="Crate Type Box" categoryImg = {cratetypebox}></CategoryCard>
+                <CategoryCard
+                  name="Skidded Base Box"
+                  categoryImg={skidded}
+                ></CategoryCard>
+                <CategoryCard
+                  name="Crate Type Box"
+                  categoryImg={cratetypebox}
+                ></CategoryCard>
                 <CategoryCard
                   name="Nailed Pine & Plywood Boxes"
                   categoryImg={nailedpine}
@@ -171,45 +186,50 @@ const Dashboard = (props) => {
             </div>
             <div className="home-banner">
               <div className="home-container05">
-                <h3 className="home-text19 Heading-3">MOBILLIO</h3>
+                <h3 className="home-text19 Heading-3">VIJAY</h3>
                 <span className="home-text20">
                   <span></span>
-                  <span>furniture</span>
+                  <span>Pallet & Boxes</span>
                 </span>
               </div>
             </div>
             <div className="home-container06 max-width-container">
               <div className="home-container07">
                 <span className="home-text23">
-                  <span>
+                  {/* <span>
                     Mobilio Stores Inc. are unique reseller of modern furnitors,
                     designer-made,
                   </span>
                   <br></br>
-                  <span>home-decoration items, since 1997.</span>
+                  <span>home-decoration items, since 1997.</span> */}
                   <br></br>
                   <span>
-                    Our legacy guarantees exceptional product quality, unique
-                    designs and special prices for all of our product line-up.
-                    Lorem ipsum, consectetur adipiscing elit duis tristique
-                    sollicitudin nibh sit amet commodo nulla facilisi nullam
-                    vehicula ipsum a arcu cursus vitae congue. Consectetur
-                    adipiscing elit duis tristique sollicitudin nibh sit amet
-                    commodo nulla facilisi nullam vehicula ipsum a arcu cursus
-                    vitae congue
+                    With a legacy spanning over six decades, Vijay Pallet & Box
+                    Manufacturers (India) Pvt. Ltd. stands as a premier name in
+                    the wooden packaging industry. Our expertise lies in
+                    crafting high-quality wooden pallets, boxes, cable drums,
+                    and pallet collars tailored for diverse industrial needs. We
+                    specialize in heat-treated wooden packaging solutions that
+                    meet the stringent requirements of heavy engineering and
+                    pharmaceutical industries. Under the dynamic leadership of
+                    Mr. Abhay P. Thorat, our commitment to innovation and
+                    quality has made us a trusted partner for businesses engaged
+                    in export packing. Discover our durable, custom-made wooden
+                    packaging solutions designed to protect and secure your
+                    valuable products.
                     <span
                       dangerouslySetInnerHTML={{
-                        __html: ' ',
+                        __html: " ",
                       }}
                     />
                   </span>
                 </span>
-                <img
-                  alt="M3271427"
+                {/* <img
+                  alt="vpb"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTk5JyBoZWlnaHQ9JzIwMCcgdmlld0JveD0nMCAwIDE5OSAyMDAnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00zNy4zMDI2IDcxLjI5MjVMOTkuMzgyNyAxODIuMzEzTDE2MS40NjMgNzEuMjkyNUwxNzUuNjIyIDIwMEgxOTguNzY1TDE3NS42MjIgMEw5OS4zODI3IDEzNy45NTlMMjMuMTQzOSAwTDAgMjAwSDIzLjE0MzlMMzcuMzAyNiA3MS4yOTI1WicgZmlsbD0nYmxhY2snIGZpbGwtb3BhY2l0eT0nMC4wNicvPgo8L3N2Zz4K"
                   className="home-svg"
-                />
-                <button className="button">Read more</button>
+                /> */}
+                {/* <button className="button">Read more</button> */}
               </div>
             </div>
           </div>
@@ -219,9 +239,9 @@ const Dashboard = (props) => {
               <div className="home-gallery">
                 <div className="home-left1">
                   <ItemCard
-                    name="Amazing Bulb"
-                    value="5"
-                    imageSrc="https://images.unsplash.com/photo-1593256013337-62c77fe20ef5?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxsaWdodCUyMGxhbXB8ZW58MHx8fHwxNjUyODE4MzQy&amp;ixlib=rb-1.2.1&amp;h=1500"
+                    name="Cable Drums"
+                    value="1499"
+                    imageSrc={cabledrums}
                     rootClassName="rootClassName4"
                   ></ItemCard>
                 </div>
@@ -229,16 +249,17 @@ const Dashboard = (props) => {
                   <div className="home-top">
                     <div className="home-left2">
                       <ItemCard
-                        name="Luxury Executive Chair"
-                        imageSrc="https://images.unsplash.com/photo-1601366533287-5ee4c763ae4e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE3fHxjaGFpcnxlbnwwfHx8fDE2NjY3ODA3MTk&amp;ixlib=rb-4.0.3&amp;w=1500"
+                        name="Plywood Box"
+                        value = "999"
+                        imageSrc={nailedpine2}
                         rootClassName="rootClassName2"
                       ></ItemCard>
                     </div>
                     <div className="home-right2">
                       <ItemCard
-                        name="Stylish Garden Chair"
-                        value="299"
-                        imageSrc="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEzfHxjaGFpcnxlbnwwfHx8fDE2NTI4MTgxODk&amp;ixlib=rb-1.2.1&amp;h=1500"
+                        name="Heavy Duty Wooden Box"
+                        value="799"
+                        imageSrc = {heavydutybox}
                         rootClassName="rootClassName3"
                       ></ItemCard>
                     </div>
@@ -246,17 +267,17 @@ const Dashboard = (props) => {
                   <div className="home-bottom">
                     <div className="home-left3">
                       <ItemCard
-                        name="Black Studio Lamp"
-                        value="149"
-                        imageSrc="https://images.unsplash.com/photo-1543512214-4f76e81f8bfc?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDM2fHxsYW1wfGVufDB8fHx8MTY2Njc4MDc4OQ&amp;ixlib=rb-4.0.3&amp;w=1500"
+                        name="Pallet"
+                        value="599"
+                        imageSrc={pallet}
                         rootClassName="item-card-root-class-name1"
                       ></ItemCard>
                     </div>
                     <div className="home-right3">
                       <ItemCard
-                        name="Jars"
-                        value="49"
-                        imageSrc="https://images.unsplash.com/photo-1525705235800-a0c174299118?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDU0fHx3b29kZW4lMjBqYXJ8ZW58MHx8fHwxNjY2NzgxMDQ2&amp;ixlib=rb-4.0.3&amp;w=1500"
+                        name="Crate Type Box"
+                        value="899"
+                        imageSrc={cratetypebox2}
                         rootClassName="item-card-root-class-name6"
                       ></ItemCard>
                     </div>
@@ -277,8 +298,8 @@ const Dashboard = (props) => {
                 <span className="home-text31">Explore now</span>
               </div>
             </div>
-            <img />    {/* here background image will be there from broucher */}
-           </div>
+            <img /> {/* here background image will be there from broucher */}
+          </div>
           <div className="section-container">
             <div className="max-width-container">
               <SectionHeading
@@ -348,9 +369,8 @@ const Dashboard = (props) => {
           </div>
         </div>
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

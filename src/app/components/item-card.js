@@ -155,7 +155,7 @@ ItemCard.defaultProps = {
   imageSrc:
     'https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxmb29kfGVufDB8fHx8MTYyNjQ0OTIzNQ&ixlib=rb-1.2.1&w=1500',
   imageAlt: 'image',
-  currency: '$',
+  currency: '₹',
   value: '429',
   rootClassName: '',
 }
