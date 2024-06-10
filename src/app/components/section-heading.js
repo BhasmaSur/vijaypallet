@@ -38,7 +38,7 @@ const SectionHeading = (props) => {
 SectionHeading.defaultProps = {
   heading: 'TRENDING ITEMS',
   subtitle:
-    'Explore our monthly most trending products, new items and the best Mobilio offers you can buy',
+    'Explore our most trending products, new items and the best VPB offers you can buy',
   rootClassName: '',
 }
 
