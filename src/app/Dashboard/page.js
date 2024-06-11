@@ -64,15 +64,15 @@ const Dashboard = (props) => {
               <div className="home-navbar1">
                 <div className="home-middle">
                   <div className="home-left">
-                    <span className="navbar-link">ABOUT</span>
-                    <span className="navbar-link">VISION</span>
-                    <span className="navbar-link">PALLETS</span>
+                    <span className="navbar-link">{websiteDetails.about}</span>
+                    <span className="navbar-link">{websiteDetails.vision}</span>
+                    <span className="navbar-link">{websiteDetails.pallets}</span>
                   </div>
                   <span className="navbar-logo-title">{websiteDetails.title}</span>
                   <div className="home-right">
-                    <span className="navbar-link">BOXES</span>
-                    <span className="navbar-link">POLICY</span>
-                    <span className="navbar-link">CONTACT</span>
+                    <span className="navbar-link">{websiteDetails.boxes}</span>
+                    <span className="navbar-link">{websiteDetails.policy}</span>
+                    <span className="navbar-link">{websiteDetails.contact}</span>
                   </div>
                 </div>
                 <div className="home-icons home-image1"></div>
@@ -93,7 +93,7 @@ const Dashboard = (props) => {
                 <div className="home-nav">
                   <div className="home-container02">
                     <span className="home-logo-center1">
-                      Vijay Pallet & Box
+                      {websiteDetails.title}
                     </span>
                     <div
                       data-role="CloseMobileMenu"
@@ -106,12 +106,12 @@ const Dashboard = (props) => {
                     </div>
                   </div>
                   <div className="home-middle1">
-                    <span className="home-text06">ABOUT</span>
-                    <span className="home-text07">VISION</span>
-                    <span className="home-text08">PALLETS</span>
-                    <span className="home-text09">BOXES</span>
-                    <span className="home-text10">POLICY</span>
-                    <span className="home-text11">CONTACT</span>
+                    <span className="home-text06">{websiteDetails.about}</span>
+                    <span className="home-text07">{websiteDetails.vision}</span>
+                    <span className="home-text08">{websiteDetails.pallets}</span>
+                    <span className="home-text09">{websiteDetails.boxes}</span>
+                    <span className="home-text10">{websiteDetails.policy}</span>
+                    <span className="home-text11">{websiteDetails.contact}</span>
                   </div>
                 </div>
                 {/* <div>
@@ -149,18 +149,18 @@ const Dashboard = (props) => {
                         className="home-image4"
                       />
                       <span className="home-text12">
-                        <span>Leading Manufacturing Company</span>
+                        <span>{websiteDetails.leadingManufacturing}</span>
                         <br></br>
-                        <span>of Wooden pallet & Boxes</span>
+                        <span>{websiteDetails.ofWoodenPallet}</span>
                       </span>
                     </div>
-                    <h1 className="home-text16 Heading-1">Durability</h1>
+                    <h1 className="home-text16 Heading-1">{websiteDetails.durability}</h1>
                     <div className="home-container04">
-                      <span className="home-text17">FROM</span>
+                      <span className="home-text17">{websiteDetails.from}</span>
                       <span className="home-text18">₹999</span>
                     </div>
                     <div className="home-btn-group">
-                      <button className="button">Explore the collection</button>
+                      <button className="button">{websiteDetails.exploreTheCollection}</button>
                     </div>
                   </div>
                   <img
@@ -175,38 +175,38 @@ const Dashboard = (props) => {
             <div className="section-container column">
               <div className="max-width-container">
                 <SectionHeading
-                  heading="SHOP BY BOX CATEGORIES"
-                  subtitle="Start shopping based on the categories you are interested in"
+                  heading={websiteDetails.shopByBoxCategories}
+                  subtitle={websiteDetails.startShopping}
                 ></SectionHeading>
                 <div className="home-cards-container">
                   <CategoryCard
-                    name="Skidded Base Box"
+                    name={websiteDetails.skiddedBaseBox}
                     categoryImg={skidded}
                   ></CategoryCard>
                   <CategoryCard
-                    name="Crate Type Box"
+                    name={websiteDetails.crateTypeBox}
                     categoryImg={cratetypebox}
                   ></CategoryCard>
                   <CategoryCard
-                    name="Nailed Pine & Plywood Boxes"
+                    name={websiteDetails.nailedPine}
                     categoryImg={nailedpine}
                   ></CategoryCard>
                   <CategoryCard
-                    name="Nailless Plywood Box"
+                    name={websiteDetails.naillessPlywoodBox}
                     categoryImg={nailless}
                   ></CategoryCard>
                   <CategoryCard
-                    name="Standard Box"
+                    name={websiteDetails.standardBox}
                     categoryImg={standard}
                   ></CategoryCard>
                 </div>
               </div>
               <div className="home-banner">
                 <div className="home-container05">
-                  <h3 className="home-text19 Heading-3">VIJAY</h3>
+                  <h3 className="home-text19 Heading-3">{websiteDetails.vijay}</h3>
                   <span className="home-text20">
                     <span></span>
-                    <span>Pallet & Boxes</span>
+                    <span>{websiteDetails.palletAndBoxes}</span>
                   </span>
                 </div>
               </div>
@@ -221,19 +221,7 @@ const Dashboard = (props) => {
                   <span>home-decoration items, since 1997.</span> */}
                     <br></br>
                     <span>
-                      With a legacy spanning over six decades, Vijay Pallet &
-                      Box Manufacturers (India) Pvt. Ltd. stands as a premier
-                      name in the wooden packaging industry. Our expertise lies
-                      in crafting high-quality wooden pallets, boxes, cable
-                      drums, and pallet collars tailored for diverse industrial
-                      needs. We specialize in heat-treated wooden packaging
-                      solutions that meet the stringent requirements of heavy
-                      engineering and pharmaceutical industries. Under the
-                      dynamic leadership of Mr. Abhay P. Thorat, our commitment
-                      to innovation and quality has made us a trusted partner
-                      for businesses engaged in export packing. Discover our
-                      durable, custom-made wooden packaging solutions designed
-                      to protect and secure your valuable products.
+                      {websiteDetails.intro}
                       <span
                         dangerouslySetInnerHTML={{
                           __html: " ",
@@ -254,28 +242,28 @@ const Dashboard = (props) => {
             <br />
             <div className="max-width-container">
               <SectionHeading
-                heading="SHOP BY PALLET & CRATES"
-                subtitle="Start shopping based on the categories you are interested in"
+                heading={websiteDetails.shopByPalletAndCrates}
+                subtitle={websiteDetails.shopByCategories}
               ></SectionHeading>
               <div className="home-cards-container">
                 <CategoryCard
-                  name="European 4 Way Pallet"
+                  name={websiteDetails.europeanWayPallet}
                   categoryImg={european}
                 ></CategoryCard>
                 <CategoryCard
-                  name="Pine Wood Pallet"
+                  name={websiteDetails.pineWoodPallet}
                   categoryImg={pinewoodpallet}
                 ></CategoryCard>
                 <CategoryCard
-                  name="Fourway Close Board Pallet"
+                  name={websiteDetails.fourwatCloseBoardPallet}
                   categoryImg={fourwaypallet}
                 ></CategoryCard>
                 <CategoryCard
-                  name="Rubber Wood Crate"
+                  name={websiteDetails.rubberWoodCrate}
                   categoryImg={rubberwoordcrate}
                 ></CategoryCard>
                 <CategoryCard
-                  name="Wooden Packaging Crate"
+                  name={websiteDetails.woodenPackagingCrate}
                   categoryImg={woodenpackagingcrate}
                 ></CategoryCard>
               </div>
@@ -283,11 +271,14 @@ const Dashboard = (props) => {
 
             <div className="section-container">
               <div className="max-width-container">
-                <SectionHeading></SectionHeading>
+              <SectionHeading
+                heading={websiteDetails.trendingItems}
+                subtitle={websiteDetails.exploreOurMostTrending}
+              ></SectionHeading>
                 <div className="home-gallery">
                   <div className="home-left1">
                     <ItemCard
-                      name="Cable Drums"
+                      name={websiteDetails.cableDrums}
                       value="1499"
                       imageSrc={cabledrums}
                       rootClassName="rootClassName4"
@@ -297,7 +288,7 @@ const Dashboard = (props) => {
                     <div className="home-top">
                       <div className="home-left2">
                         <ItemCard
-                          name="Plywood Box"
+                          name={websiteDetails.plywoodBox}
                           value="999"
                           imageSrc={nailedpine2}
                           rootClassName="rootClassName2"
@@ -305,7 +296,7 @@ const Dashboard = (props) => {
                       </div>
                       <div className="home-right2">
                         <ItemCard
-                          name="Industry Wooden Box"
+                          name={websiteDetails.industryWoodenBox}
                           value="799"
                           imageSrc={industrybox}
                           rootClassName="rootClassName3"
@@ -315,7 +306,7 @@ const Dashboard = (props) => {
                     <div className="home-bottom">
                       <div className="home-left3">
                         <ItemCard
-                          name="Pallet"
+                          name={websiteDetails.pallet}
                           value="599"
                           imageSrc={pallet}
                           rootClassName="item-card-root-class-name1"
@@ -323,7 +314,7 @@ const Dashboard = (props) => {
                       </div>
                       <div className="home-right3">
                         <ItemCard
-                          name="Crate Type Box"
+                          name={websiteDetails.crateTypeBox}
                           value="899"
                           imageSrc={cratetypebox2}
                           rootClassName="item-card-root-class-name6"
@@ -337,10 +328,9 @@ const Dashboard = (props) => {
             <div className="home-full-width-banner section-container">
               <div className="home-left4">
                 <div className="home-content">
-                  <span className="home-text29">OUR FACILITY</span>
+                  <span className="home-text29">{websiteDetails.ourFacility}</span>
                   <span className="home-text30">
-                    Discover our state-of-the-art production facility, where
-                    innovation meets quality
+                    {websiteDetails.discoverOurState}
                   </span>
                 </div>
                 {/* <div className="home-btn button">

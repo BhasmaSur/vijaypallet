@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const SectionHeading = (props) => {
   return (
@@ -32,20 +32,20 @@ const SectionHeading = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 SectionHeading.defaultProps = {
-  heading: 'TRENDING ITEMS',
+  heading: "TRENDING ITEMS",
   subtitle:
-    'Explore our most trending products, new items and the best VPB offers you can buy',
-  rootClassName: '',
-}
+    "Explore our most trending products, new items and the best VPB offers you can buy",
+  rootClassName: "",
+};
 
 SectionHeading.propTypes = {
   heading: PropTypes.string,
   subtitle: PropTypes.string,
   rootClassName: PropTypes.string,
-}
+};
 
-export default SectionHeading
+export default SectionHeading;
