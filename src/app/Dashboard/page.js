@@ -96,26 +96,6 @@ const Dashboard = (props) => {
                   <span className="home-text11">CONTACT</span>
                 </div>
               </div>
-              {/* <div>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon04"
-                >
-                  <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  className="home-icon06"
-                >
-                  <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  className="home-icon08"
-                >
-                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                </svg>
-              </div> */}
             </div>
           </header>
         </div>
@@ -195,12 +175,6 @@ const Dashboard = (props) => {
             <div className="home-container06 max-width-container">
               <div className="home-container07">
                 <span className="home-text23">
-                  {/* <span>
-                    Mobilio Stores Inc. are unique reseller of modern furnitors,
-                    designer-made,
-                  </span>
-                  <br></br>
-                  <span>home-decoration items, since 1997.</span> */}
                   <br></br>
                   <span>
                     With a legacy spanning over six decades, Vijay Pallet & Box
@@ -232,36 +206,36 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div className="max-width-container">
-              <SectionHeading
-                heading="SHOP BY PALLET & CRATES"
-                subtitle="Start shopping based on the categories you are interested in"
-              ></SectionHeading>
-              <div className="home-cards-container">
-                <CategoryCard
-                  name="European 4 Way Pallet"
-                  categoryImg={european}
-                ></CategoryCard>
-                <CategoryCard
-                  name="Pine Wood Pallet"
-                  categoryImg={pinewoodpallet}
-                ></CategoryCard>
-                <CategoryCard
-                  name="Fourway Close Board Pallet"
-                  categoryImg={fourwaypallet}
-                ></CategoryCard>
-                <CategoryCard
-                  name="Rubber Wood Crate"
-                  categoryImg={rubberwoordcrate}
-                ></CategoryCard>
-                <CategoryCard
-                  name="Wooden Packaging Crate"
-                  categoryImg={woodenpackagingcrate}
-                ></CategoryCard>
-              </div>
+            <SectionHeading
+              heading="SHOP BY PALLET & CRATES"
+              subtitle="Start shopping based on the categories you are interested in"
+            ></SectionHeading>
+            <div className="home-cards-container">
+              <CategoryCard
+                name="European 4 Way Pallet"
+                categoryImg={european}
+              ></CategoryCard>
+              <CategoryCard
+                name="Pine Wood Pallet"
+                categoryImg={pinewoodpallet}
+              ></CategoryCard>
+              <CategoryCard
+                name="Fourway Close Board Pallet"
+                categoryImg={fourwaypallet}
+              ></CategoryCard>
+              <CategoryCard
+                name="Rubber Wood Crate"
+                categoryImg={rubberwoordcrate}
+              ></CategoryCard>
+              <CategoryCard
+                name="Wooden Packaging Crate"
+                categoryImg={woodenpackagingcrate}
+              ></CategoryCard>
             </div>
+          </div>
 
           <div className="section-container">
             <div className="max-width-container">
@@ -316,47 +290,62 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
+          <div className="home-banner">
+            <div className="home-container05">
+              <h3 className="home-text19 Heading-3">VISION</h3>
+              <span className="home-text20">
+                <span></span>
+                <span>and Values</span>
+              </span>
+            </div>
+          </div>
+          <div className="home-container06 max-width-container">
+            <div className="home-container07">
+              <span className="home-text23">
+                <span>
+                  Our vision is to be an innovative, respected, and preferred
+                  business partner, exemplifying excellence in our industry
+                  through a dynamic, positive, and target-oriented organization.
+                  We prioritize continuous improvement, team spirit, and high
+                  ethical standards based on trust. Our goal is to exceed
+                  customer expectations by delivering quality products, ensuring
+                  on-time delivery, and striving for zero defects, breakdowns,
+                  and accidents. We emphasize cost-effectiveness, continual
+                  improvement, social and environmental responsibility, and
+                  rigorous safety measures across all work areas.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: " ",
+                    }}
+                  />
+                </span>
+              </span>
+            </div>
+          </div>
           <div className="home-full-width-banner section-container">
             <div className="home-left4">
               <div className="home-content">
-                <span className="home-text29">OUR FACILITY</span>
-                <span className="home-text30">
-                  Discover our state-of-the-art production facility, where
-                  innovation meets quality
+                <span className="home-text29">QUALITY POLICY</span>
+                <span
+                  className="home-text30"
+                  style={{
+                    display: "block",
+                    textAlign: "justify",
+                    lineHeight: "1.5",
+                  }}
+                >
+                  At Vijay Pallet & Box Manufacturers India Pvt. Ltd., we
+                  embrace ISO 9001:2015 standards, prioritizing quality
+                  workmanship, on-time delivery, and superior after-sales
+                  support to meet and exceed customer expectations. We are
+                  committed to statutory and regulatory compliance, fostering a
+                  fulfilling work environment, and continuously improving our
+                  Quality Management System.
                 </span>
               </div>
-              {/* <div className="home-btn button">
-                <span className="home-text31">Explore now</span>
-              </div> */}
             </div>
             <img alt="VPB" className="home-image6" src={lookbook} />{" "}
-            {/* here background image will be there from broucher */}
           </div>
-          {/* <div className="section-container">
-            <div className="max-width-container">
-              <SectionHeading
-                heading="Our blog"
-                subtitle="Read the latest news and furniture related articles"
-                rootClassName="section-heading-root-class-name"
-              ></SectionHeading>
-              <div className="home-container08">
-                <BlogPostCard
-                  imageSrc="https://images.unsplash.com/photo-1630585308572-f53438fc684f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE1fHxzb2ZhfGVufDB8fHx8MTY2Njc4MDYxMQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-                  rootClassName="blog-post-card-root-class-name"
-                ></BlogPostCard>
-                <BlogPostCard
-                  title="Unique natural color combinations"
-                  newProp="Unique natural color combinations"
-                  imageSrc="https://images.unsplash.com/photo-1550254478-ead40cc54513?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxzb2ZhfGVufDB8fHx8MTY2Njc4MDYxMQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-                ></BlogPostCard>
-                <BlogPostCard
-                  title="Special combinations for nature lovers"
-                  newProp="Special combinations for nature lovers"
-                  imageSrc="https://images.unsplash.com/photo-1615800002234-05c4d488696c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMwfHxzb2ZhfGVufDB8fHx8MTY2Njc4MDYzOQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-                ></BlogPostCard>
-              </div>
-            </div>
-          </div> */}
         </div>
         <div className="home-footer">
           <div className="max-width-container">
