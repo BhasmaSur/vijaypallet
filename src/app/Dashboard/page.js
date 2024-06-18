@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Head from "next/head";
-
+import Link from "next/link";
 import SectionHeading from "../components/section-heading";
 import CategoryCard from "../components/category-card";
 import ItemCard from "../components/item-card";
@@ -26,6 +26,7 @@ import fourwaypallet from "../image/fourwaypallet";
 import rubberwoordcrate from "../image/rubberwoodcrate";
 import woodenpackagingcrate from "../image/woodenpackagingcrate";
 
+
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -48,15 +49,27 @@ const Dashboard = (props) => {
             <div className="home-navbar1">
               <div className="home-middle">
                 <div className="home-left">
+                  <Link href = "#about">
                   <span className="navbar-link">ABOUT</span>
+                  </Link>
+                  <Link href = "#vision">
                   <span className="navbar-link">VISION</span>
+                  </Link>
+                  <Link href = "#pallets">
                   <span className="navbar-link">PALLETS</span>
+                  </Link>
                 </div>
                 <span className="navbar-logo-title">VIJAY PALLET & BOX</span>
                 <div className="home-right">
+                  <Link href = '#boxes'>
                   <span className="navbar-link">BOXES</span>
+                  </Link>
+                  <Link href = '#policy'>
                   <span className="navbar-link">POLICY</span>
+                  </Link>
+                  <Link href = '#contact'>
                   <span className="navbar-link">CONTACT</span>
+                  </Link>
                 </div>
               </div>
               <div className="home-icons home-image1"></div>
@@ -134,12 +147,15 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
+
           <div className="section-container column">
             <div className="max-width-container">
+              <section id = 'boxes'>
               <SectionHeading
                 heading="SHOP BY BOX CATEGORIES"
                 subtitle="Start shopping based on the categories you are interested in"
               ></SectionHeading>
+              </section>
               <div className="home-cards-container">
                 <CategoryCard
                   name="Skidded Base Box"
@@ -163,6 +179,7 @@ const Dashboard = (props) => {
                 ></CategoryCard>
               </div>
             </div>
+            <section id = "about">
             <div className="home-banner">
               <div className="home-container05">
                 <h3 className="home-text19 Heading-3">VIJAY</h3>
@@ -205,14 +222,17 @@ const Dashboard = (props) => {
                 {/* <button className="button">Read more</button> */}
               </div>
             </div>
+            </section>
           </div>
           <br />
           <br />
           <div className="max-width-container">
+            <section id = 'pallets'>
             <SectionHeading
               heading="SHOP BY PALLET & CRATES"
               subtitle="Start shopping based on the categories you are interested in"
             ></SectionHeading>
+            </section>
             <div className="home-cards-container">
               <CategoryCard
                 name="European 4 Way Pallet"
@@ -290,6 +310,7 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
+          <section id = "vision">
           <div className="home-banner">
             <div className="home-container05">
               <h3 className="home-text19 Heading-3">VISION</h3>
@@ -322,6 +343,8 @@ const Dashboard = (props) => {
               </span>
             </div>
           </div>
+          </section>
+          <section id = 'policy'>
           <div className="home-full-width-banner section-container">
             <div className="home-left4">
               <div className="home-content">
@@ -346,6 +369,7 @@ const Dashboard = (props) => {
             </div>
             <img alt="VPB" className="home-image6" src={lookbook} />{" "}
           </div>
+          </section>
         </div>
         <div className="home-footer">
           <div className="max-width-container">
@@ -357,8 +381,10 @@ const Dashboard = (props) => {
                   <br></br>
                   <span>United States</span>
                 </span>
+                <section id = 'contact'>
                 <span className="home-text36">(671) 555-0110</span>
                 <span className="home-text37">contact@mobillio.com</span>
+                </section>
               </div>
               <div className="home-links-container">
                 <div className="home-container10">
