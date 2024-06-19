@@ -74,6 +74,7 @@ const Dashboard = (props) => {
               </div>
               <div className="home-icons home-image1"></div>
             </div>
+            {/* <span className="navbar-logo-title">Vijay Pallet & Box</span> */}
             <div
               data-role="BurgerMenu"
               className="home-burger-menu"
