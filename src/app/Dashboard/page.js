@@ -26,7 +26,6 @@ import fourwaypallet from "../image/fourwaypallet";
 import rubberwoordcrate from "../image/rubberwoodcrate";
 import woodenpackagingcrate from "../image/woodenpackagingcrate";
 
-
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -49,32 +48,32 @@ const Dashboard = (props) => {
             <div className="home-navbar1">
               <div className="home-middle">
                 <div className="home-left">
-                  <Link href = "#about">
-                  <span className="navbar-link">ABOUT</span>
+                  <Link href="#about">
+                    <span className="navbar-link">ABOUT</span>
                   </Link>
-                  <Link href = "#vision">
-                  <span className="navbar-link">VISION</span>
+                  <Link href="#vision">
+                    <span className="navbar-link">VISION</span>
                   </Link>
-                  <Link href = "#pallets">
-                  <span className="navbar-link">PALLETS</span>
+                  <Link href="#pallets">
+                    <span className="navbar-link">PALLETS</span>
                   </Link>
                 </div>
                 <span className="navbar-logo-title">VIJAY PALLET & BOX</span>
                 <div className="home-right">
-                  <Link href = '#boxes'>
-                  <span className="navbar-link">BOXES</span>
+                  <Link href="#boxes">
+                    <span className="navbar-link">BOXES</span>
                   </Link>
-                  <Link href = '#policy'>
-                  <span className="navbar-link">POLICY</span>
+                  <Link href="#policy">
+                    <span className="navbar-link">POLICY</span>
                   </Link>
-                  <Link href = '#contact'>
-                  <span className="navbar-link">CONTACT</span>
+                  <Link href="#contact">
+                    <span className="navbar-link">CONTACT</span>
                   </Link>
                 </div>
               </div>
               <div className="home-icons home-image1"></div>
             </div>
-            {/* <span className="navbar-logo-title">Vijay Pallet & Box</span> */}
+            <span className="navbar-logo-title mobile-title">Vijay Pallet & Box</span>
             <div
               data-role="BurgerMenu"
               className="home-burger-menu"
@@ -102,12 +101,24 @@ const Dashboard = (props) => {
                   </div>
                 </div>
                 <div className="home-middle1">
-                  <span className="home-text06">ABOUT</span>
-                  <span className="home-text07">VISION</span>
-                  <span className="home-text08">PALLETS</span>
-                  <span className="home-text09">BOXES</span>
-                  <span className="home-text10">POLICY</span>
-                  <span className="home-text11">CONTACT</span>
+                  <Link href="#about" onClick={toggleMenu}>
+                    <span className="home-text06">ABOUT</span>
+                  </Link>
+                  <Link href="#vision" onClick={toggleMenu}>
+                    <span className="home-text07">VISION</span>
+                  </Link>
+                  <Link href="#pallets" onClick={toggleMenu}>
+                    <span className="home-text08">PALLETS</span>
+                  </Link>
+                  <Link href="#boxes" onClick={toggleMenu}>
+                    <span className="home-text09">BOXES</span>
+                  </Link>
+                  <Link href="#policy" onClick={toggleMenu}>
+                    <span className="home-text10">POLICY</span>
+                  </Link>
+                  <Link href="#contact" onClick={toggleMenu}>
+                    <span className="home-text11">CONTACT</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -151,11 +162,11 @@ const Dashboard = (props) => {
 
           <div className="section-container column">
             <div className="max-width-container">
-              <section id = 'boxes'>
-              <SectionHeading
-                heading="SHOP BY BOX CATEGORIES"
-                subtitle="Start shopping based on the categories you are interested in"
-              ></SectionHeading>
+              <section id="boxes">
+                <SectionHeading
+                  heading="SHOP BY BOX CATEGORIES"
+                  subtitle="Start shopping based on the categories you are interested in"
+                ></SectionHeading>
               </section>
               <div className="home-cards-container">
                 <CategoryCard
@@ -180,59 +191,59 @@ const Dashboard = (props) => {
                 ></CategoryCard>
               </div>
             </div>
-            <section id = "about">
-            <div className="home-banner">
-              <div className="home-container05">
-                <h3 className="home-text19 Heading-3">VIJAY</h3>
-                <span className="home-text20">
-                  <span></span>
-                  <span>Pallet & Boxes</span>
-                </span>
-              </div>
-            </div>
-            <div className="home-container06 max-width-container">
-              <div className="home-container07">
-                <span className="home-text23">
-                  <br></br>
-                  <span>
-                    With a legacy spanning over six decades, Vijay Pallet & Box
-                    Manufacturers (India) Pvt. Ltd. stands as a premier name in
-                    the wooden packaging industry. Our expertise lies in
-                    crafting high-quality wooden pallets, boxes, cable drums,
-                    and pallet collars tailored for diverse industrial needs. We
-                    specialize in heat-treated wooden packaging solutions that
-                    meet the stringent requirements of heavy engineering and
-                    pharmaceutical industries. Under the dynamic leadership of
-                    Mr. Abhay P. Thorat, our commitment to innovation and
-                    quality has made us a trusted partner for businesses engaged
-                    in export packing. Discover our durable, custom-made wooden
-                    packaging solutions designed to protect and secure your
-                    valuable products.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: " ",
-                      }}
-                    />
+            <section id="about">
+              <div className="home-banner">
+                <div className="home-container05">
+                  <h3 className="home-text19 Heading-3">VIJAY</h3>
+                  <span className="home-text20">
+                    <span></span>
+                    <span>Pallet & Boxes</span>
                   </span>
-                </span>
-                {/* <img
+                </div>
+              </div>
+              <div className="home-container06 max-width-container">
+                <div className="home-container07">
+                  <span className="home-text23">
+                    <br></br>
+                    <span>
+                      With a legacy spanning over six decades, Vijay Pallet &
+                      Box Manufacturers (India) Pvt. Ltd. stands as a premier
+                      name in the wooden packaging industry. Our expertise lies
+                      in crafting high-quality wooden pallets, boxes, cable
+                      drums, and pallet collars tailored for diverse industrial
+                      needs. We specialize in heat-treated wooden packaging
+                      solutions that meet the stringent requirements of heavy
+                      engineering and pharmaceutical industries. Under the
+                      dynamic leadership of Mr. Abhay P. Thorat, our commitment
+                      to innovation and quality has made us a trusted partner
+                      for businesses engaged in export packing. Discover our
+                      durable, custom-made wooden packaging solutions designed
+                      to protect and secure your valuable products.
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: " ",
+                        }}
+                      />
+                    </span>
+                  </span>
+                  {/* <img
                   alt="vpb"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTk5JyBoZWlnaHQ9JzIwMCcgdmlld0JveD0nMCAwIDE5OSAyMDAnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00zNy4zMDI2IDcxLjI5MjVMOTkuMzgyNyAxODIuMzEzTDE2MS40NjMgNzEuMjkyNUwxNzUuNjIyIDIwMEgxOTguNzY1TDE3NS42MjIgMEw5OS4zODI3IDEzNy45NTlMMjMuMTQzOSAwTDAgMjAwSDIzLjE0MzlMMzcuMzAyNiA3MS4yOTI1WicgZmlsbD0nYmxhY2snIGZpbGwtb3BhY2l0eT0nMC4wNicvPgo8L3N2Zz4K"
                   className="home-svg"
                 /> */}
-                {/* <button className="button">Read more</button> */}
+                  {/* <button className="button">Read more</button> */}
+                </div>
               </div>
-            </div>
             </section>
           </div>
           <br />
           <br />
           <div className="max-width-container">
-            <section id = 'pallets'>
-            <SectionHeading
-              heading="SHOP BY PALLET & CRATES"
-              subtitle="Start shopping based on the categories you are interested in"
-            ></SectionHeading>
+            <section id="pallets">
+              <SectionHeading
+                heading="SHOP BY PALLET & CRATES"
+                subtitle="Start shopping based on the categories you are interested in"
+              ></SectionHeading>
             </section>
             <div className="home-cards-container">
               <CategoryCard
@@ -311,65 +322,66 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
-          <section id = "vision">
-          <div className="home-banner">
-            <div className="home-container05">
-              <h3 className="home-text19 Heading-3">VISION</h3>
-              <span className="home-text20">
-                <span></span>
-                <span>and Values</span>
-              </span>
-            </div>
-          </div>
-          <div className="home-container06 max-width-container">
-            <div className="home-container07">
-              <span className="home-text23">
-                <span>
-                  Our vision is to be an innovative, respected, and preferred
-                  business partner, exemplifying excellence in our industry
-                  through a dynamic, positive, and target-oriented organization.
-                  We prioritize continuous improvement, team spirit, and high
-                  ethical standards based on trust. Our goal is to exceed
-                  customer expectations by delivering quality products, ensuring
-                  on-time delivery, and striving for zero defects, breakdowns,
-                  and accidents. We emphasize cost-effectiveness, continual
-                  improvement, social and environmental responsibility, and
-                  rigorous safety measures across all work areas.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: " ",
-                    }}
-                  />
-                </span>
-              </span>
-            </div>
-          </div>
-          </section>
-          <section id = 'policy'>
-          <div className="home-full-width-banner section-container">
-            <div className="home-left4">
-              <div className="home-content">
-                <span className="home-text29">QUALITY POLICY</span>
-                <span
-                  className="home-text30"
-                  style={{
-                    display: "block",
-                    textAlign: "justify",
-                    lineHeight: "1.5",
-                  }}
-                >
-                  At Vijay Pallet & Box Manufacturers India Pvt. Ltd., we
-                  embrace ISO 9001:2015 standards, prioritizing quality
-                  workmanship, on-time delivery, and superior after-sales
-                  support to meet and exceed customer expectations. We are
-                  committed to statutory and regulatory compliance, fostering a
-                  fulfilling work environment, and continuously improving our
-                  Quality Management System.
+          <section id="vision">
+            <div className="home-banner">
+              <div className="home-container05">
+                <h3 className="home-text19 Heading-3">VISION</h3>
+                <span className="home-text20">
+                  <span></span>
+                  <span>and Values</span>
                 </span>
               </div>
             </div>
-            <img alt="VPB" className="home-image6" src={lookbook} />{" "}
-          </div>
+            <div className="home-container06 max-width-container">
+              <div className="home-container07">
+                <span className="home-text23">
+                  <span>
+                    Our vision is to be an innovative, respected, and preferred
+                    business partner, exemplifying excellence in our industry
+                    through a dynamic, positive, and target-oriented
+                    organization. We prioritize continuous improvement, team
+                    spirit, and high ethical standards based on trust. Our goal
+                    is to exceed customer expectations by delivering quality
+                    products, ensuring on-time delivery, and striving for zero
+                    defects, breakdowns, and accidents. We emphasize
+                    cost-effectiveness, continual improvement, social and
+                    environmental responsibility, and rigorous safety measures
+                    across all work areas.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: " ",
+                      }}
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </section>
+          <section id="policy">
+            <div className="home-full-width-banner section-container">
+              <div className="home-left4">
+                <div className="home-content">
+                  <span className="home-text29">QUALITY POLICY</span>
+                  <span
+                    className="home-text30"
+                    style={{
+                      display: "block",
+                      textAlign: "justify",
+                      lineHeight: "1.5",
+                    }}
+                  >
+                    At Vijay Pallet & Box Manufacturers India Pvt. Ltd., we
+                    embrace ISO 9001:2015 standards, prioritizing quality
+                    workmanship, on-time delivery, and superior after-sales
+                    support to meet and exceed customer expectations. We are
+                    committed to statutory and regulatory compliance, fostering
+                    a fulfilling work environment, and continuously improving
+                    our Quality Management System.
+                  </span>
+                </div>
+              </div>
+              <img alt="VPB" className="home-image6" src={lookbook} />{" "}
+            </div>
           </section>
         </div>
         <div className="home-footer">
@@ -382,9 +394,9 @@ const Dashboard = (props) => {
                   <br></br>
                   <span>United States</span>
                 </span>
-                <section id = 'contact'>
-                <span className="home-text36">(671) 555-0110</span>
-                <span className="home-text37">contact@mobillio.com</span>
+                <section id="contact">
+                  <span className="home-text36">(671) 555-0110</span>
+                  <span className="home-text37">contact@mobillio.com</span>
                 </section>
               </div>
               <div className="home-links-container">
