@@ -73,7 +73,9 @@ const Dashboard = (props) => {
               </div>
               <div className="home-icons home-image1"></div>
             </div>
-            <span className="navbar-logo-title mobile-title">Vijay Pallet & Box</span>
+            <span className="navbar-logo-title mobile-title">
+              Vijay Pallet & Box
+            </span>
             <div
               data-role="BurgerMenu"
               className="home-burger-menu"
@@ -387,7 +389,7 @@ const Dashboard = (props) => {
         <div className="home-footer">
           <div className="max-width-container">
             <footer className="home-footer1">
-              <div className="home-container09">
+              {/* <div className="home-container09">
                 <h3 className="home-text32 Heading-3">MOBILLIO</h3>
                 <span className="home-text33">
                   <span>4517 Washington Ave. Manchester, Kentucky 39495,</span>
@@ -398,8 +400,8 @@ const Dashboard = (props) => {
                   <span className="home-text36">(671) 555-0110</span>
                   <span className="home-text37">contact@mobillio.com</span>
                 </section>
-              </div>
-              <div className="home-links-container">
+              </div> */}
+              {/* <div className="home-links-container">
                 <div className="home-container10">
                   <span className="home-text38">Categories</span>
                   <span className="home-text39">Collections</span>
@@ -424,6 +426,102 @@ const Dashboard = (props) => {
                   <span className="home-text54">Track your order</span>
                   <span className="home-text55">Shipping &amp; Delivery</span>
                 </div>
+              </div> */}
+              <div className="home-container09 p-4 sm:p-6 lg:p-8">
+                <h3 className="home-text32 Heading-3 text-xl sm:text-2xl lg:text-3xl">
+                  Vijay Pallet & Box
+                </h3>
+                <span className="home-text33 block text-base sm:text-lg lg:text-xl">
+                  <span>
+                    Plot No. 29, Vijay Sadan, Niranjan Housing Society
+                  </span>
+                  <br />
+                  <span>Pune, Maharashtra</span>
+                </span>
+                <section id="contact" className="mt-4">
+                  <span className="home-text36 block text-base sm:text-lg lg:text-xl">
+                    9422314491, 9657222868
+                  </span>
+                  <span className="home-text37 block text-base sm:text-lg lg:text-xl">
+                    contact@vijaypalletandbox.com
+                  </span>
+                </section>
+                <br/>
+                <div className="google-map mt-4">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242221.3872836721!2d73.57675778671873!3d18.451509099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac13fffffff%3A0xe6710018343d0a80!2sVijay%20Pallet%20And%20Box%20Manufacturers%20India%20Pvt%20Ltd!5e0!3m2!1sen!2sus!4v1718907040817!5m2!1sen!2sus"
+                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] rounded-lg shadow-md"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    title="Google Map"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div>
+                <section class="bg-white dark:bg-gray-900">
+                  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                      Contact Us
+                    </h2>
+                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                      Need more details of our products & services? Let us know
+                    </p>
+                    <form action="#" class="space-y-8">
+                      <div>
+                        <label
+                          for="email"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        >
+                          Your email
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                          placeholder="name@gmail.com"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="subject"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        >
+                          Subject
+                        </label>
+                        <input
+                          type="text"
+                          id="subject"
+                          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                          placeholder="Let us know how we can help you"
+                          required
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label
+                          for="message"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                        >
+                          Your message
+                        </label>
+                        <textarea
+                          id="message"
+                          rows="6"
+                          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Leave a comment..."
+                        ></textarea>
+                      </div>
+                      <button
+                        type="submit"
+                        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      >
+                        Send message
+                      </button>
+                    </form>
+                  </div>
+                </section>
               </div>
             </footer>
           </div>
