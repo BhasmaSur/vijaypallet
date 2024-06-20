@@ -149,7 +149,7 @@ const Dashboard = (props) => {
                     <span className="home-text18">₹999</span>
                   </div>
                   <div className="home-btn-group">
-                    <button className="button">Explore the collection</button>
+                    <Link href="#trending"><button className="button">Explore the collection</button></Link>
                   </div>
                 </div>
                 <img
@@ -270,7 +270,7 @@ const Dashboard = (props) => {
               ></CategoryCard>
             </div>
           </div>
-
+        <section id = "trending">
           <div className="section-container">
             <div className="max-width-container">
               <SectionHeading></SectionHeading>
@@ -324,6 +324,7 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
+          </section>
           <section id="vision">
             <div className="home-banner">
               <div className="home-container05">
