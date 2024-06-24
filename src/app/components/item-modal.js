@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import ItemDetailCard from "./item-detail-card";
 
 const ItemModal = ({
   heading,
