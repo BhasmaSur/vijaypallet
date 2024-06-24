@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-
+import Link from "next/link";
 import SectionHeading from "../components/section-heading";
 import CategoryCard from "../components/category-card";
 import ItemCard from "../components/item-card";
@@ -93,7 +93,7 @@ const Dashboard = (props) => {
       {websiteDetails && (
         <div className="home-container">
           <Head>
-            <title>{websiteDetails.title}</title>
+          <title>{websiteDetails.title}</title>
             <meta property="og:title" content="Vijay Pallet & Box" />
           </Head>
           <div className="home-navbar">
@@ -104,21 +104,27 @@ const Dashboard = (props) => {
               <div className="home-navbar1">
                 <div className="home-middle">
                   <div className="home-left">
-                    <span className="navbar-link">{websiteDetails.about}</span>
-                    <span className="navbar-link">{websiteDetails.vision}</span>
-                    <span className="navbar-link">
-                      {websiteDetails.pallets}
-                    </span>
+                    <Link href="#about">
+                      <span className="navbar-link">{websiteDetails.about}</span>
+                    </Link>
+                    <Link href="#vision">
+                      <span className="navbar-link">{websiteDetails.vision}</span>
+                    </Link>
+                    <Link href="#pallets">
+                      <span className="navbar-link">{websiteDetails.pallets}</span>
+                    </Link>
                   </div>
-                  <span className="navbar-logo-title">
-                    {websiteDetails.title}
-                  </span>
+                  <span className="navbar-logo-title">{websiteDetails.title}</span>
                   <div className="home-right">
-                    <span className="navbar-link">{websiteDetails.boxes}</span>
-                    <span className="navbar-link">{websiteDetails.policy}</span>
-                    <span className="navbar-link">
-                      {websiteDetails.contact}
-                    </span>
+                    <Link href="#boxes">
+                      <span className="navbar-link">{websiteDetails.boxes}</span>
+                    </Link>
+                    <Link href="#policy">
+                      <span className="navbar-link">{websiteDetails.policy}</span>
+                    </Link>
+                    <Link href="#contact">
+                      <span className="navbar-link">{websiteDetails.contact}</span>
+                    </Link>
                   </div>
                 </div>
                 <div className="home-icons home-image1"></div>
@@ -139,7 +145,7 @@ const Dashboard = (props) => {
                 <div className="home-nav">
                   <div className="home-container02">
                     <span className="home-logo-center1">
-                      {websiteDetails.title}
+                    {websiteDetails.title}
                     </span>
                     <div
                       data-role="CloseMobileMenu"
@@ -152,38 +158,26 @@ const Dashboard = (props) => {
                     </div>
                   </div>
                   <div className="home-middle1">
-                    <span className="home-text06">{websiteDetails.about}</span>
-                    <span className="home-text07">{websiteDetails.vision}</span>
-                    <span className="home-text08">
-                      {websiteDetails.pallets}
-                    </span>
-                    <span className="home-text09">{websiteDetails.boxes}</span>
-                    <span className="home-text10">{websiteDetails.policy}</span>
-                    <span className="home-text11">
-                      {websiteDetails.contact}
-                    </span>
+                    <Link href="#about" onClick={toggleMenu}>
+                      <span className="home-text06">{websiteDetails.about}</span>
+                    </Link>
+                    <Link href="#vision" onClick={toggleMenu}>
+                      <span className="home-text07">{websiteDetails.vision}</span>
+                    </Link>
+                    <Link href="#pallets" onClick={toggleMenu}>
+                      <span className="home-text08">{websiteDetails.pallets}</span>
+                    </Link>
+                    <Link href="#boxes" onClick={toggleMenu}>
+                      <span className="home-text09">{websiteDetails.boxes}</span>
+                    </Link>
+                    <Link href="#policy" onClick={toggleMenu}>
+                      <span className="home-text10">{websiteDetails.policy}</span>
+                    </Link>
+                    <Link href="#contact" onClick={toggleMenu}>
+                      <span className="home-text11">{websiteDetails.contact}</span>
+                    </Link>
                   </div>
                 </div>
-                {/* <div>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon04"
-                >
-                  <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  className="home-icon06"
-                >
-                  <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  className="home-icon08"
-                >
-                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                </svg>
-              </div> */}
               </div>
             </header>
           </div>
@@ -204,17 +198,17 @@ const Dashboard = (props) => {
                         <span>{websiteDetails.ofWoodenPallet}</span>
                       </span>
                     </div>
-                    <h1 className="home-text16 Heading-1">
-                      {websiteDetails.durability}
-                    </h1>
+                    <h1 className="home-text16 Heading-1">{websiteDetails.durability}</h1>
                     <div className="home-container04">
                       <span className="home-text17">{websiteDetails.from}</span>
                       <span className="home-text18">₹999</span>
                     </div>
                     <div className="home-btn-group">
-                      <button className="button">
+                      <Link href="#trending">
+                        <button className="button">
                         {websiteDetails.exploreTheCollection}
-                      </button>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                   <img
@@ -228,10 +222,12 @@ const Dashboard = (props) => {
             </div>
             <div className="section-container column">
               <div className="max-width-container">
-                <SectionHeading
-                  heading={websiteDetails.shopByBoxCategories}
-                  subtitle={websiteDetails.startShopping}
-                ></SectionHeading>
+                <section id="boxes">
+                  <SectionHeading
+                    heading={websiteDetails.shopByBoxCategories}
+                    subtitle={websiteDetails.startShopping}
+                  ></SectionHeading>
+                </section>
                 <div className="home-cards-container">
                   <CategoryCard
                     name={websiteDetails.skiddedBaseBox}
@@ -260,52 +256,48 @@ const Dashboard = (props) => {
                   ></CategoryCard>
                 </div>
               </div>
-              <div className="home-banner">
-                <div className="home-container05">
-                  <h3 className="home-text19 Heading-3">
-                    {websiteDetails.vijay}
-                  </h3>
-                  <span className="home-text20">
-                    <span></span>
-                    <span>{websiteDetails.palletAndBoxes}</span>
-                  </span>
-                </div>
-              </div>
-              <div className="home-container06 max-width-container">
-                <div className="home-container07">
-                  <span className="home-text23">
-                    {/* <span>
-                    Mobilio Stores Inc. are unique reseller of modern furnitors,
-                    designer-made,
-                  </span>
-                  <br></br>
-                  <span>home-decoration items, since 1997.</span> */}
-                    <br></br>
-                    <span>
-                      {websiteDetails.intro}
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: " ",
-                        }}
-                      />
+              <section id="about">
+                <div className="home-banner">
+                  <div className="home-container05">
+                    <h3 className="home-text19 Heading-3">{websiteDetails.vijay}</h3>
+                    <span className="home-text20">
+                      <span></span>
+                      <span>{websiteDetails.palletAndBoxes}</span>
                     </span>
-                  </span>
-                  {/* <img
+                  </div>
+                </div>
+                <div className="home-container06 max-width-container">
+                  <div className="home-container07">
+                    <span className="home-text23">
+                      <br></br>
+                      <span>
+                      {websiteDetails.intro}
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: " ",
+                          }}
+                        />
+                      </span>
+                    </span>
+                    {/* <img
                   alt="vpb"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTk5JyBoZWlnaHQ9JzIwMCcgdmlld0JveD0nMCAwIDE5OSAyMDAnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00zNy4zMDI2IDcxLjI5MjVMOTkuMzgyNyAxODIuMzEzTDE2MS40NjMgNzEuMjkyNUwxNzUuNjIyIDIwMEgxOTguNzY1TDE3NS42MjIgMEw5OS4zODI3IDEzNy45NTlMMjMuMTQzOSAwTDAgMjAwSDIzLjE0MzlMMzcuMzAyNiA3MS4yOTI1WicgZmlsbD0nYmxhY2snIGZpbGwtb3BhY2l0eT0nMC4wNicvPgo8L3N2Zz4K"
                   className="home-svg"
                 /> */}
-                  {/* <button className="button">Read more</button> */}
+                    {/* <button className="button">Read more</button> */}
+                  </div>
                 </div>
-              </div>
+              </section>
             </div>
             <br />
             <br />
             <div className="max-width-container">
-              <SectionHeading
-                heading={websiteDetails.shopByPalletAndCrates}
-                subtitle={websiteDetails.shopByCategories}
-              ></SectionHeading>
+              <section id="pallets">
+                <SectionHeading
+                  heading={websiteDetails.shopByPalletAndCrates}
+                  subtitle={websiteDetails.shopByCategories}
+                ></SectionHeading>
+              </section>
               <div className="home-cards-container">
                 <CategoryCard
                   name={websiteDetails.europeanWayPallet}
@@ -334,154 +326,262 @@ const Dashboard = (props) => {
                 ></CategoryCard>
               </div>
             </div>
-
-            <div className="section-container">
-              <div className="max-width-container">
-                <SectionHeading
+            <section id="trending">
+              <div className="section-container">
+                <div className="max-width-container">
+                  <SectionHeading
                   heading={websiteDetails.trendingItems}
-                  subtitle={websiteDetails.exploreOurMostTrending}
-                ></SectionHeading>
-                <div className="home-gallery">
-                  <div className="home-left1">
-                    <ItemCard
-                      name={websiteDetails.cableDrums}
-                      value="1499"
-                      imageSrc={cabledrums}
-                      rootClassName="rootClassName4"
-                    ></ItemCard>
-                  </div>
-                  <div className="home-right1">
-                    <div className="home-top">
-                      <div className="home-left2">
-                        <ItemCard
+                  subtitle={websiteDetails.exploreOurMostTrending}></SectionHeading>
+                  <div className="home-gallery">
+                    <div className="home-left1">
+                      <ItemCard
+                        name={websiteDetails.cableDrums}
+                        value="1499"
+                        imageSrc={cabledrums}
+                        rootClassName="rootClassName4"
+                      ></ItemCard>
+                    </div>
+                    <div className="home-right1">
+                      <div className="home-top">
+                        <div className="home-left2">
+                          <ItemCard
                           name={websiteDetails.plywoodBox}
-                          value="999"
-                          imageSrc={nailedpine2}
-                          rootClassName="rootClassName2"
-                        ></ItemCard>
-                      </div>
-                      <div className="home-right2">
-                        <ItemCard
+                            value="999"
+                            imageSrc={nailedpine2}
+                            rootClassName="rootClassName2"
+                          ></ItemCard>
+                        </div>
+                        <div className="home-right2">
+                          <ItemCard
                           name={websiteDetails.industryWoodenBox}
-                          value="799"
-                          imageSrc={industrybox}
-                          rootClassName="rootClassName3"
-                        ></ItemCard>
+                            value="799"
+                            imageSrc={industrybox}
+                            rootClassName="rootClassName3"
+                          ></ItemCard>
+                        </div>
                       </div>
-                    </div>
-                    <div className="home-bottom">
-                      <div className="home-left3">
-                        <ItemCard
+                      <div className="home-bottom">
+                        <div className="home-left3">
+                          <ItemCard
                           name={websiteDetails.pallet}
-                          value="599"
-                          imageSrc={pallet}
-                          rootClassName="item-card-root-class-name1"
-                        ></ItemCard>
-                      </div>
-                      <div className="home-right3">
-                        <ItemCard
+                            value="599"
+                            imageSrc={pallet}
+                            rootClassName="item-card-root-class-name1"
+                          ></ItemCard>
+                        </div>
+                        <div className="home-right3">
+                          <ItemCard
                           name={websiteDetails.crateTypeBox}
-                          value="899"
-                          imageSrc={cratetypebox2}
-                          rootClassName="item-card-root-class-name6"
-                        ></ItemCard>
+                            value="899"
+                            imageSrc={cratetypebox2}
+                            rootClassName="item-card-root-class-name6"
+                          ></ItemCard>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="home-full-width-banner section-container">
-              <div className="home-left4">
-                <div className="home-content">
-                  <span className="home-text29">
-                    {websiteDetails.ourFacility}
-                  </span>
-                  <span className="home-text30">
-                    {websiteDetails.discoverOurState}
+            </section>
+            <section id="vision">
+              <div className="home-banner">
+                <div className="home-container05">
+                  <h3 className="home-text19 Heading-3">VISION</h3>
+                  <span className="home-text20">
+                    <span></span>
+                    <span>and Values</span>
                   </span>
                 </div>
-                {/* <div className="home-btn button">
-                <span className="home-text31">Explore now</span>
-              </div> */}
               </div>
-              <img alt="VPB" className="home-image6" src={lookbook} />{" "}
-              {/* here background image will be there from broucher */}
-            </div>
-            {/* <div className="section-container">
-            <div className="max-width-container">
-              <SectionHeading
-                heading="Our blog"
-                subtitle="Read the latest news and furniture related articles"
-                rootClassName="section-heading-root-class-name"
-              ></SectionHeading>
-              <div className="home-container08">
-                <BlogPostCard
-                  imageSrc="https://images.unsplash.com/photo-1630585308572-f53438fc684f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE1fHxzb2ZhfGVufDB8fHx8MTY2Njc4MDYxMQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-                  rootClassName="blog-post-card-root-class-name"
-                ></BlogPostCard>
-                <BlogPostCard
-                  title="Unique natural color combinations"
-                  newProp="Unique natural color combinations"
-                  imageSrc="https://images.unsplash.com/photo-1550254478-ead40cc54513?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxzb2ZhfGVufDB8fHx8MTY2Njc4MDYxMQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-                ></BlogPostCard>
-                <BlogPostCard
-                  title="Special combinations for nature lovers"
-                  newProp="Special combinations for nature lovers"
-                  imageSrc="https://images.unsplash.com/photo-1615800002234-05c4d488696c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMwfHxzb2ZhfGVufDB8fHx8MTY2Njc4MDYzOQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-                ></BlogPostCard>
+              <div className="home-container06 max-width-container">
+                <div className="home-container07">
+                  <span className="home-text23">
+                    <span>
+                      Our vision is to be an innovative, respected, and
+                      preferred business partner, exemplifying excellence in our
+                      industry through a dynamic, positive, and target-oriented
+                      organization. We prioritize continuous improvement, team
+                      spirit, and high ethical standards based on trust. Our
+                      goal is to exceed customer expectations by delivering
+                      quality products, ensuring on-time delivery, and striving
+                      for zero defects, breakdowns, and accidents. We emphasize
+                      cost-effectiveness, continual improvement, social and
+                      environmental responsibility, and rigorous safety measures
+                      across all work areas.
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: " ",
+                        }}
+                      />
+                    </span>
+                  </span>
+                </div>
               </div>
-            </div>
-          </div> */}
+            </section>
+            <section id="policy">
+              <div className="home-full-width-banner section-container">
+                <div className="home-left4">
+                  <div className="home-content">
+                    <span className="home-text29">QUALITY POLICY</span>
+                    <span
+                      className="home-text30"
+                      style={{
+                        display: "block",
+                        textAlign: "justify",
+                        lineHeight: "1.5",
+                      }}
+                    >
+                      At Vijay Pallet & Box Manufacturers India Pvt. Ltd., we
+                      embrace ISO 9001:2015 standards, prioritizing quality
+                      workmanship, on-time delivery, and superior after-sales
+                      support to meet and exceed customer expectations. We are
+                      committed to statutory and regulatory compliance,
+                      fostering a fulfilling work environment, and continuously
+                      improving our Quality Management System.
+                    </span>
+                  </div>
+                </div>
+                <img alt="VPB" className="home-image6" src={lookbook} />{" "}
+              </div>
+            </section>
           </div>
           <div className="home-footer">
             <div className="max-width-container">
               <footer className="home-footer1">
-                <div className="home-container09">
-                  <h3 className="home-text32 Heading-3">Vijay Pallet</h3>
-                  <span className="home-text33">
-                    <span>Pune, Pune, Pune,</span>
-                    <br></br>
-                    <span>India</span>
-                  </span>
-                  <span className="home-text36">9999999999</span>
-                  <span className="home-text37">contact@vijaypallet.com</span>
+                {/* <div className="home-container09">
+                <h3 className="home-text32 Heading-3">MOBILLIO</h3>
+                <span className="home-text33">
+                  <span>4517 Washington Ave. Manchester, Kentucky 39495,</span>
+                  <br></br>
+                  <span>United States</span>
+                </span>
+                <section id="contact">
+                  <span className="home-text36">(671) 555-0110</span>
+                  <span className="home-text37">contact@mobillio.com</span>
+                </section>
+              </div> */}
+                {/* <div className="home-links-container">
+                <div className="home-container10">
+                  <span className="home-text38">Categories</span>
+                  <span className="home-text39">Collections</span>
+                  <span className="home-text40">Desks</span>
+                  <span className="home-text41">Furniture</span>
+                  <span className="home-text42">Lamps</span>
+                  <span className="home-text43">Plants</span>
+                  <span className="home-text44">Decoration</span>
                 </div>
-                <div className="home-links-container">
-                  <div className="home-container10">
-                    <span className="home-text38">Categories</span>
-                    <span className="home-text39">Collections</span>
-                    <span className="home-text40">Desks</span>
-                    <span className="home-text41">Furniture</span>
-                    <span className="home-text42">Lamps</span>
-                    <span className="home-text43">Plants</span>
-                    <span className="home-text44">Decoration</span>
-                  </div>
-                  <div className="home-container11">
-                    <span className="home-text45">Company</span>
-                    <span className="home-text46">Shop</span>
-                    <span className="home-text47">Lookbook</span>
-                    <span className="home-text48">Specials</span>
-                    <span className="home-text49">About</span>
-                    <span className="home-text50">Blog</span>
-                  </div>
-                  <div className="home-container12">
-                    <span className="home-text51">Language</span>
-                    <span
-                      onClick={() => setLanguage(LANGUAGE.ENGLISH)}
-                      className="home-text52"
-                    >
-                      English
+                <div className="home-container11">
+                  <span className="home-text45">Company</span>
+                  <span className="home-text46">Shop</span>
+                  <span className="home-text47">Lookbook</span>
+                  <span className="home-text48">Specials</span>
+                  <span className="home-text49">About</span>
+                  <span className="home-text50">Blog</span>
+                </div>
+                <div className="home-container12">
+                  <span className="home-text51">Resources</span>
+                  <span className="home-text52">Contact us</span>
+                  <span className="home-text53">Order</span>
+                  <span className="home-text54">Track your order</span>
+                  <span className="home-text55">Shipping &amp; Delivery</span>
+                </div>
+              </div> */}
+                <div className="home-container09 p-4 sm:p-6 lg:p-8">
+                  <h3 className="home-text32 Heading-3 text-xl sm:text-2xl lg:text-3xl">
+                    Vijay Pallet & Box
+                  </h3>
+                  <span className="home-text33 block text-base sm:text-lg lg:text-xl">
+                    <span>
+                      Plot No. 29, Vijay Sadan, Niranjan Housing Society
                     </span>
-                    <span
-                      onClick={() => setLanguage(LANGUAGE.MARATHI)}
-                      className="home-text53"
-                    >
-                      Marathi
+                    <br />
+                    <span>Pune, Maharashtra</span>
+                  </span>
+                  <section id="contact" className="mt-4">
+                    <span className="home-text36 block text-base sm:text-lg lg:text-xl">
+                      9422314491, 9657222868
                     </span>
-                    {/* <span className="home-text54">Track your order</span>
-                  <span className="home-text55">Shipping &amp; Delivery</span> */}
+                    <span className="home-text37 block text-base sm:text-lg lg:text-xl">
+                      contact@vijaypalletandbox.com
+                    </span>
+                  </section>
+                  <br />
+                  <div className="google-map mt-4">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242221.3872836721!2d73.57675778671873!3d18.451509099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac13fffffff%3A0xe6710018343d0a80!2sVijay%20Pallet%20And%20Box%20Manufacturers%20India%20Pvt%20Ltd!5e0!3m2!1sen!2sus!4v1718907040817!5m2!1sen!2sus"
+                      className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] rounded-lg shadow-md"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      title="Google Map"
+                    ></iframe>
                   </div>
+                </div>
+
+                <div>
+                  <section class="bg-white dark:bg-gray-900">
+                    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                        Contact Us
+                      </h2>
+                      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                        Need more details of our products & services? Let us
+                        know
+                      </p>
+                      <form action="#" class="space-y-8">
+                        <div>
+                          <label
+                            for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                          >
+                            Your email
+                          </label>
+                          <input
+                            type="email"
+                            id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="name@gmail.com"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="subject"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                          >
+                            Subject
+                          </label>
+                          <input
+                            type="text"
+                            id="subject"
+                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Let us know how we can help you"
+                            required
+                          />
+                        </div>
+                        <div class="sm:col-span-2">
+                          <label
+                            for="message"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                          >
+                            Your message
+                          </label>
+                          <textarea
+                            id="message"
+                            rows="6"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Leave a comment..."
+                          ></textarea>
+                        </div>
+                        <button
+                          type="submit"
+                          class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        >
+                          Send message
+                        </button>
+                      </form>
+                    </div>
+                  </section>
                 </div>
               </footer>
             </div>

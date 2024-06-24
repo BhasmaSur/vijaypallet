@@ -137,22 +137,44 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff; */
-  display: none;
+  /* display: none; */
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   background-color: #fff;
-  z-index: 1000;
-  flex-direction: column;
+  z-index: 50;
+  transition: top 0.3s ease-in-out;
+  padding: 10px;
+  /* flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 32px;
+  padding: 32px; */
 }
 .home-mobile-menu.active {
-    display: flex;
-  }
+  top: 0;
+  display: flex;
+}
+
+.home-mobile-menu .home-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.home-mobile-menu .home-nav a {
+  font-size: 1.2rem;
+  padding: 5px 0;
+  width: 100%;
+  align-items: centers;
+}
+.home-mobile-menu .home-nav a:not(:last-child) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
 .home-nav {
   display: flex;
   align-items: flex-start;
@@ -170,12 +192,13 @@
   height: auto;
   font-size: 24px;
   font-family: Jost;
-  font-weight: 500;
-  line-height: 20px;
+  font-weight: 300;
+  line-height: 1.5;
   margin-left: var(--dl-space-space-fourunits);
   margin-right: var(--dl-space-space-fourunits);
   letter-spacing: 0.4em;
   text-decoration: none;
+  margin-top: 20px;
 }
 .home-close-mobile-menu {
   display: flex;
@@ -183,20 +206,21 @@
   justify-content: center;
 }
 .home-icon02 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
 }
 .home-middle1 {
   gap: var(--dl-space-space-unit);
   display: flex;
   position: relative;
   box-sizing: border-box;
-  align-items: flex-start;
   flex-shrink: 1;
   border-color: transparent;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 .home-text06 {
   color: rgba(0, 0, 0, 1);
@@ -764,6 +788,7 @@
   color: var(--dl-color-gray-black50);
   margin-bottom: var(--dl-space-space-unit);
 }
+
 @media (max-width: 991px) {
   .home-container01 {
     display: none;
@@ -918,5 +943,21 @@
   }
   .home-container11 {
     margin-right: var(--dl-space-space-unit);
+  }
+}
+
+
+.mobile-title{
+  display: none;
+  white-space: nowrap;
+}
+
+@media(max-width: 768px){
+  .mobile-title{
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 1rem;
   }
 }
