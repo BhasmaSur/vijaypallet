@@ -27,11 +27,37 @@ import rubberwoordcrate from "../image/rubberwoodcrate";
 import woodenpackagingcrate from "../image/woodenpackagingcrate";
 import { getCookieObject, setCookieDetails } from "@/utility/loginUtils";
 import { ENGLISH_LANGUAGE, LANGUAGE, MARATHI_LANGUAGE } from "@/language/lang";
+import ItemModal from "../components/item-modal";
+import Modal from "../components/modal";
 
+const itemPara = [
+  "We are manufacturer and supplier of wooden packaging boxes. We give our customers quality products and being the best wooden boxes manufacturer in Pune.",
+  "These wooden boxes are manufactured after heat treated treatment of wood. Because of this treatment, we give you the assurance of high quality wooden box.",
+  "We provide high quality products as per the industrial requirements. We are famous wooden boxes manufacturer in Pune because of our quality products and timely delivery.",
+  "Products are listed as packaging box, wooden plywood box.",
+];
+
+const itemHeading = {
+  h5: "Wooden Boxes",
+  h6: "Features of Wooden Boxes",
+};
+
+const features = ["Compact Designs", "User Friendly", "Good Quality"];
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [websiteDetails, setWebsiteDetails] = useState(null);
   const { language } = getCookieObject();
+  const [openCategoryModal, setOpenCategoryModal] = useState(false);
+  const [itemSelected, setItemSelected] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const setLanguage = (langString) => {
     setCookieDetails({ lang: langString });
@@ -48,8 +74,22 @@ const Dashboard = (props) => {
     setMenuOpen(!menuOpen);
   };
 
+  const onClickCategory = (categoryDetail) => {
+    setItemSelected(categoryDetail);
+    openModal();
+  };
+
   return (
     <>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ItemModal
+          heading={"Category"}
+          itemPara={itemPara}
+          itemHeading={itemHeading}
+          features={features}
+          closeModal={closeModal}
+        />
+      </Modal>
       {websiteDetails && (
         <div className="home-container">
           <Head>
@@ -66,13 +106,19 @@ const Dashboard = (props) => {
                   <div className="home-left">
                     <span className="navbar-link">{websiteDetails.about}</span>
                     <span className="navbar-link">{websiteDetails.vision}</span>
-                    <span className="navbar-link">{websiteDetails.pallets}</span>
+                    <span className="navbar-link">
+                      {websiteDetails.pallets}
+                    </span>
                   </div>
-                  <span className="navbar-logo-title">{websiteDetails.title}</span>
+                  <span className="navbar-logo-title">
+                    {websiteDetails.title}
+                  </span>
                   <div className="home-right">
                     <span className="navbar-link">{websiteDetails.boxes}</span>
                     <span className="navbar-link">{websiteDetails.policy}</span>
-                    <span className="navbar-link">{websiteDetails.contact}</span>
+                    <span className="navbar-link">
+                      {websiteDetails.contact}
+                    </span>
                   </div>
                 </div>
                 <div className="home-icons home-image1"></div>
@@ -108,10 +154,14 @@ const Dashboard = (props) => {
                   <div className="home-middle1">
                     <span className="home-text06">{websiteDetails.about}</span>
                     <span className="home-text07">{websiteDetails.vision}</span>
-                    <span className="home-text08">{websiteDetails.pallets}</span>
+                    <span className="home-text08">
+                      {websiteDetails.pallets}
+                    </span>
                     <span className="home-text09">{websiteDetails.boxes}</span>
                     <span className="home-text10">{websiteDetails.policy}</span>
-                    <span className="home-text11">{websiteDetails.contact}</span>
+                    <span className="home-text11">
+                      {websiteDetails.contact}
+                    </span>
                   </div>
                 </div>
                 {/* <div>
@@ -154,13 +204,17 @@ const Dashboard = (props) => {
                         <span>{websiteDetails.ofWoodenPallet}</span>
                       </span>
                     </div>
-                    <h1 className="home-text16 Heading-1">{websiteDetails.durability}</h1>
+                    <h1 className="home-text16 Heading-1">
+                      {websiteDetails.durability}
+                    </h1>
                     <div className="home-container04">
                       <span className="home-text17">{websiteDetails.from}</span>
                       <span className="home-text18">₹999</span>
                     </div>
                     <div className="home-btn-group">
-                      <button className="button">{websiteDetails.exploreTheCollection}</button>
+                      <button className="button">
+                        {websiteDetails.exploreTheCollection}
+                      </button>
                     </div>
                   </div>
                   <img
@@ -182,28 +236,35 @@ const Dashboard = (props) => {
                   <CategoryCard
                     name={websiteDetails.skiddedBaseBox}
                     categoryImg={skidded}
+                    onClickCategory={onClickCategory}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.crateTypeBox}
                     categoryImg={cratetypebox}
+                    onClickCategory={onClickCategory}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.nailedPine}
                     categoryImg={nailedpine}
+                    onClickCategory={onClickCategory}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.naillessPlywoodBox}
                     categoryImg={nailless}
+                    onClickCategory={onClickCategory}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.standardBox}
                     categoryImg={standard}
+                    onClickCategory={onClickCategory}
                   ></CategoryCard>
                 </div>
               </div>
               <div className="home-banner">
                 <div className="home-container05">
-                  <h3 className="home-text19 Heading-3">{websiteDetails.vijay}</h3>
+                  <h3 className="home-text19 Heading-3">
+                    {websiteDetails.vijay}
+                  </h3>
                   <span className="home-text20">
                     <span></span>
                     <span>{websiteDetails.palletAndBoxes}</span>
@@ -249,32 +310,37 @@ const Dashboard = (props) => {
                 <CategoryCard
                   name={websiteDetails.europeanWayPallet}
                   categoryImg={european}
+                  onClickCategory={onClickCategory}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.pineWoodPallet}
                   categoryImg={pinewoodpallet}
+                  onClickCategory={onClickCategory}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.fourwatCloseBoardPallet}
                   categoryImg={fourwaypallet}
+                  onClickCategory={onClickCategory}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.rubberWoodCrate}
                   categoryImg={rubberwoordcrate}
+                  onClickCategory={onClickCategory}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.woodenPackagingCrate}
                   categoryImg={woodenpackagingcrate}
+                  onClickCategory={onClickCategory}
                 ></CategoryCard>
               </div>
             </div>
 
             <div className="section-container">
               <div className="max-width-container">
-              <SectionHeading
-                heading={websiteDetails.trendingItems}
-                subtitle={websiteDetails.exploreOurMostTrending}
-              ></SectionHeading>
+                <SectionHeading
+                  heading={websiteDetails.trendingItems}
+                  subtitle={websiteDetails.exploreOurMostTrending}
+                ></SectionHeading>
                 <div className="home-gallery">
                   <div className="home-left1">
                     <ItemCard
@@ -328,7 +394,9 @@ const Dashboard = (props) => {
             <div className="home-full-width-banner section-container">
               <div className="home-left4">
                 <div className="home-content">
-                  <span className="home-text29">{websiteDetails.ourFacility}</span>
+                  <span className="home-text29">
+                    {websiteDetails.ourFacility}
+                  </span>
                   <span className="home-text30">
                     {websiteDetails.discoverOurState}
                   </span>

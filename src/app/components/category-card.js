@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const CategoryCard = (props) => {
+  const { onClickCategory } = props;
   return (
     <>
-      <div className="category-card-category-card">
+      <div
+        onClick={() => onClickCategory(props)}
+        className="category-card-category-card"
+      >
         <img
           alt={props.imageAlt}
           src={props.categoryImg}
@@ -55,20 +59,20 @@ const CategoryCard = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 CategoryCard.defaultProps = {
   categoryImg:
-    'https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxjaGFpcnxlbnwwfHx8fDE2NTI4MTgxODk&ixlib=rb-1.2.1&w=1500',
-  imageAlt: 'image',
-  name: 'Desks',
-}
+    "https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxjaGFpcnxlbnwwfHx8fDE2NTI4MTgxODk&ixlib=rb-1.2.1&w=1500",
+  imageAlt: "image",
+  name: "Desks",
+};
 
 CategoryCard.propTypes = {
   categoryImg: PropTypes.string,
   imageAlt: PropTypes.string,
   name: PropTypes.string,
-}
+};
 
-export default CategoryCard
+export default CategoryCard;
