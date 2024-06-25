@@ -29,6 +29,7 @@ import { getCookieObject, setCookieDetails } from "@/utility/loginUtils";
 import { ENGLISH_LANGUAGE, LANGUAGE, MARATHI_LANGUAGE } from "@/language/lang";
 import ItemModal from "../components/item-modal";
 import Modal from "../components/modal";
+import { CATEGORY_DETAIL_LABELS, getCategoryDetail } from "@/utility/dataUtil";
 
 const itemPara = [
   "We are manufacturer and supplier of wooden packaging boxes. We give our customers quality products and being the best wooden boxes manufacturer in Pune.",
@@ -74,8 +75,12 @@ const Dashboard = (props) => {
     setMenuOpen(!menuOpen);
   };
 
-  const onClickCategory = (categoryDetail) => {
-    setItemSelected(categoryDetail);
+  const onClickCategory = (categoryCode) => {
+    const selectedCategoryDetails = getCategoryDetail(
+      categoryCode,
+      websiteDetails
+    );
+    setItemSelected(selectedCategoryDetails);
     openModal();
   };
 
@@ -83,17 +88,16 @@ const Dashboard = (props) => {
     <>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ItemModal
-          heading={"Category"}
-          itemPara={itemPara}
-          itemHeading={itemHeading}
-          features={features}
+          selectedCategoryDetails={itemSelected}
+          heading={"Products"}
           closeModal={closeModal}
+          featureHeading={"Features"}
         />
       </Modal>
       {websiteDetails && (
         <div className="home-container">
           <Head>
-          <title>{websiteDetails.title}</title>
+            <title>{websiteDetails.title}</title>
             <meta property="og:title" content="Vijay Pallet & Box" />
           </Head>
           <div className="home-navbar">
@@ -105,25 +109,39 @@ const Dashboard = (props) => {
                 <div className="home-middle">
                   <div className="home-left">
                     <Link href="#about">
-                      <span className="navbar-link">{websiteDetails.about}</span>
+                      <span className="navbar-link">
+                        {websiteDetails.about}
+                      </span>
                     </Link>
                     <Link href="#vision">
-                      <span className="navbar-link">{websiteDetails.vision}</span>
+                      <span className="navbar-link">
+                        {websiteDetails.vision}
+                      </span>
                     </Link>
                     <Link href="#pallets">
-                      <span className="navbar-link">{websiteDetails.pallets}</span>
+                      <span className="navbar-link">
+                        {websiteDetails.pallets}
+                      </span>
                     </Link>
                   </div>
-                  <span className="navbar-logo-title">{websiteDetails.title}</span>
+                  <span className="navbar-logo-title">
+                    {websiteDetails.title}
+                  </span>
                   <div className="home-right">
                     <Link href="#boxes">
-                      <span className="navbar-link">{websiteDetails.boxes}</span>
+                      <span className="navbar-link">
+                        {websiteDetails.boxes}
+                      </span>
                     </Link>
                     <Link href="#policy">
-                      <span className="navbar-link">{websiteDetails.policy}</span>
+                      <span className="navbar-link">
+                        {websiteDetails.policy}
+                      </span>
                     </Link>
                     <Link href="#contact">
-                      <span className="navbar-link">{websiteDetails.contact}</span>
+                      <span className="navbar-link">
+                        {websiteDetails.contact}
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -145,7 +163,7 @@ const Dashboard = (props) => {
                 <div className="home-nav">
                   <div className="home-container02">
                     <span className="home-logo-center1">
-                    {websiteDetails.title}
+                      {websiteDetails.title}
                     </span>
                     <div
                       data-role="CloseMobileMenu"
@@ -159,22 +177,34 @@ const Dashboard = (props) => {
                   </div>
                   <div className="home-middle1">
                     <Link href="#about" onClick={toggleMenu}>
-                      <span className="home-text06">{websiteDetails.about}</span>
+                      <span className="home-text06">
+                        {websiteDetails.about}
+                      </span>
                     </Link>
                     <Link href="#vision" onClick={toggleMenu}>
-                      <span className="home-text07">{websiteDetails.vision}</span>
+                      <span className="home-text07">
+                        {websiteDetails.vision}
+                      </span>
                     </Link>
                     <Link href="#pallets" onClick={toggleMenu}>
-                      <span className="home-text08">{websiteDetails.pallets}</span>
+                      <span className="home-text08">
+                        {websiteDetails.pallets}
+                      </span>
                     </Link>
                     <Link href="#boxes" onClick={toggleMenu}>
-                      <span className="home-text09">{websiteDetails.boxes}</span>
+                      <span className="home-text09">
+                        {websiteDetails.boxes}
+                      </span>
                     </Link>
                     <Link href="#policy" onClick={toggleMenu}>
-                      <span className="home-text10">{websiteDetails.policy}</span>
+                      <span className="home-text10">
+                        {websiteDetails.policy}
+                      </span>
                     </Link>
                     <Link href="#contact" onClick={toggleMenu}>
-                      <span className="home-text11">{websiteDetails.contact}</span>
+                      <span className="home-text11">
+                        {websiteDetails.contact}
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -198,7 +228,9 @@ const Dashboard = (props) => {
                         <span>{websiteDetails.ofWoodenPallet}</span>
                       </span>
                     </div>
-                    <h1 className="home-text16 Heading-1">{websiteDetails.durability}</h1>
+                    <h1 className="home-text16 Heading-1">
+                      {websiteDetails.durability}
+                    </h1>
                     <div className="home-container04">
                       <span className="home-text17">{websiteDetails.from}</span>
                       <span className="home-text18">₹999</span>
@@ -206,7 +238,7 @@ const Dashboard = (props) => {
                     <div className="home-btn-group">
                       <Link href="#trending">
                         <button className="button">
-                        {websiteDetails.exploreTheCollection}
+                          {websiteDetails.exploreTheCollection}
                         </button>
                       </Link>
                     </div>
@@ -233,33 +265,40 @@ const Dashboard = (props) => {
                     name={websiteDetails.skiddedBaseBox}
                     categoryImg={skidded}
                     onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.SKIDDED_BASE_BOX}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.crateTypeBox}
                     categoryImg={cratetypebox}
                     onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.CRATE_TYPE_BOX}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.nailedPine}
                     categoryImg={nailedpine}
                     onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.NAILED_PINE}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.naillessPlywoodBox}
                     categoryImg={nailless}
                     onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.NAIL_LESS_PLYWOOD_BOX}
                   ></CategoryCard>
                   <CategoryCard
                     name={websiteDetails.standardBox}
                     categoryImg={standard}
                     onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.STANDARD_BOX}
                   ></CategoryCard>
                 </div>
               </div>
               <section id="about">
                 <div className="home-banner">
                   <div className="home-container05">
-                    <h3 className="home-text19 Heading-3">{websiteDetails.vijay}</h3>
+                    <h3 className="home-text19 Heading-3">
+                      {websiteDetails.vijay}
+                    </h3>
                     <span className="home-text20">
                       <span></span>
                       <span>{websiteDetails.palletAndBoxes}</span>
@@ -271,7 +310,7 @@ const Dashboard = (props) => {
                     <span className="home-text23">
                       <br></br>
                       <span>
-                      {websiteDetails.intro}
+                        {websiteDetails.intro}
                         <span
                           dangerouslySetInnerHTML={{
                             __html: " ",
@@ -303,26 +342,31 @@ const Dashboard = (props) => {
                   name={websiteDetails.europeanWayPallet}
                   categoryImg={european}
                   onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.EUROPEAN_WAY_PALLET}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.pineWoodPallet}
                   categoryImg={pinewoodpallet}
                   onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.PINE_WOOD_PALLET}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.fourwatCloseBoardPallet}
                   categoryImg={fourwaypallet}
                   onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.rubberWoodCrate}
                   categoryImg={rubberwoordcrate}
                   onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.RUBBER_WOOD_CRATE}
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.woodenPackagingCrate}
                   categoryImg={woodenpackagingcrate}
                   onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.WOODEN_PACKAGING_CRATE}
                 ></CategoryCard>
               </div>
             </div>
@@ -330,8 +374,9 @@ const Dashboard = (props) => {
               <div className="section-container">
                 <div className="max-width-container">
                   <SectionHeading
-                  heading={websiteDetails.trendingItems}
-                  subtitle={websiteDetails.exploreOurMostTrending}></SectionHeading>
+                    heading={websiteDetails.trendingItems}
+                    subtitle={websiteDetails.exploreOurMostTrending}
+                  ></SectionHeading>
                   <div className="home-gallery">
                     <div className="home-left1">
                       <ItemCard
@@ -345,7 +390,7 @@ const Dashboard = (props) => {
                       <div className="home-top">
                         <div className="home-left2">
                           <ItemCard
-                          name={websiteDetails.plywoodBox}
+                            name={websiteDetails.plywoodBox}
                             value="999"
                             imageSrc={nailedpine2}
                             rootClassName="rootClassName2"
@@ -353,7 +398,7 @@ const Dashboard = (props) => {
                         </div>
                         <div className="home-right2">
                           <ItemCard
-                          name={websiteDetails.industryWoodenBox}
+                            name={websiteDetails.industryWoodenBox}
                             value="799"
                             imageSrc={industrybox}
                             rootClassName="rootClassName3"
@@ -363,7 +408,7 @@ const Dashboard = (props) => {
                       <div className="home-bottom">
                         <div className="home-left3">
                           <ItemCard
-                          name={websiteDetails.pallet}
+                            name={websiteDetails.pallet}
                             value="599"
                             imageSrc={pallet}
                             rootClassName="item-card-root-class-name1"
@@ -371,7 +416,7 @@ const Dashboard = (props) => {
                         </div>
                         <div className="home-right3">
                           <ItemCard
-                          name={websiteDetails.crateTypeBox}
+                            name={websiteDetails.crateTypeBox}
                             value="899"
                             imageSrc={cratetypebox2}
                             rootClassName="item-card-root-class-name6"
@@ -574,12 +619,29 @@ const Dashboard = (props) => {
                           ></textarea>
                         </div>
                         <button
-                          type="submit"
-                          class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                          type="button"
+                          class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                         >
-                          Send message
+                          Send Message
                         </button>
                       </form>
+                      <div class="mt-10">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                          Select Language
+                        </h2>
+                        <p
+                          onClick={() => setLanguage(LANGUAGE.ENGLISH)}
+                          class="mb-4 text-xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white cursor-pointer"
+                        >
+                          English
+                        </p>
+                        <p
+                          onClick={() => setLanguage(LANGUAGE.MARATHI)}
+                          class="mb-4 text-xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white cursor-pointer"
+                        >
+                          Marathi
+                        </p>
+                      </div>
                     </div>
                   </section>
                 </div>
