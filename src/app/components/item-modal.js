@@ -3,11 +3,12 @@ import React from "react";
 
 const ItemModal = ({
   heading,
-  itemPara,
-  itemHeading,
-  features,
+  selectedCategoryDetails,
   closeModal,
+  featureHeading
 }) => {
+
+  const {title, itemPara, features, imageLocation} = selectedCategoryDetails
   return (
     <>
       <div>
@@ -46,14 +47,14 @@ const ItemModal = ({
           >
             <img
               class="rounded-t-lg md:rounded-none md:rounded-s-lg m-10"
-              src="/assets/cratetypebox.jpg"
+              src={imageLocation}
               alt=""
               width={"80%"}
               height={"80%"}
             />
             <div class="flex flex-col justify-between p-4 leading-normal">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {itemHeading.h5}
+                {title}
               </h5>
               {itemPara.map((para) => {
                 return (
@@ -62,10 +63,10 @@ const ItemModal = ({
                   </p>
                 );
               })}
-              {itemHeading.h6 && (
+              {featureHeading && (
                 <>
                   <h6 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
-                    {itemHeading.h6}
+                    {featureHeading}
                   </h6>
                   <ul class="list-disc ml-4">
                     {features.map((feature) => {

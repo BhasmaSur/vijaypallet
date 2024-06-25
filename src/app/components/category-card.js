@@ -3,11 +3,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const CategoryCard = (props) => {
-  const { onClickCategory } = props;
+  const { onClickCategory, categoryCode } = props;
   return (
     <>
       <div
-        onClick={() => onClickCategory(props)}
+        onClick={() => onClickCategory(categoryCode)}
         className="category-card-category-card"
       >
         <img
