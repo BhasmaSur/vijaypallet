@@ -90,8 +90,8 @@ const Dashboard = (props) => {
 
   const sendEmailForEnquiry = () => {
     const emailPayload = {
-      from_name: username,
-      to_name: "Vijay Pallet And Box",
+      subject: subject,
+      to_name: username,
       message: message,
       from_email: emailId,
       reply_to: emailId,
