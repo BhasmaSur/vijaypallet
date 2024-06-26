@@ -30,6 +30,7 @@ import { ENGLISH_LANGUAGE, LANGUAGE, MARATHI_LANGUAGE } from "@/language/lang";
 import ItemModal from "../components/item-modal";
 import Modal from "../components/modal";
 import { CATEGORY_DETAIL_LABELS, getCategoryDetail } from "@/utility/dataUtil";
+import { sendEmail } from "@/utility/emailService";
 
 const itemPara = [
   "We are manufacturer and supplier of wooden packaging boxes. We give our customers quality products and being the best wooden boxes manufacturer in Pune.",
@@ -48,9 +49,12 @@ const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [websiteDetails, setWebsiteDetails] = useState(null);
   const { language } = getCookieObject();
-  const [openCategoryModal, setOpenCategoryModal] = useState(false);
   const [itemSelected, setItemSelected] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [username, setUsername] = useState("");
+  const [emailId, setEmailId] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -82,6 +86,21 @@ const Dashboard = (props) => {
     );
     setItemSelected(selectedCategoryDetails);
     openModal();
+  };
+
+  const sendEmailForEnquiry = () => {
+    const emailPayload = {
+      from_name: username,
+      to_name: "Vijay Pallet And Box",
+      message: message,
+      from_email: emailId,
+      reply_to: emailId,
+    };
+    sendEmail(emailPayload).then((emailRes) => {
+      if (emailRes) {
+        alert("Your Message is send to the admin, we will contact you soon");
+      }
+    });
   };
 
   return (
@@ -354,7 +373,9 @@ const Dashboard = (props) => {
                   name={websiteDetails.fourwatCloseBoardPallet}
                   categoryImg={fourwaypallet}
                   onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET}
+                  categoryCode={
+                    CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET
+                  }
                 ></CategoryCard>
                 <CategoryCard
                   name={websiteDetails.rubberWoodCrate}
@@ -576,12 +597,31 @@ const Dashboard = (props) => {
                       <form action="#" class="space-y-8">
                         <div>
                           <label
+                            for="username"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                          >
+                            Your Name
+                          </label>
+                          <input
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            type="email"
+                            id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="name@gmail.com"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label
                             for="email"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                           >
                             Your email
                           </label>
                           <input
+                            value={emailId}
+                            onChange={(e) => setEmailId(e.target.value)}
                             type="email"
                             id="email"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -597,6 +637,8 @@ const Dashboard = (props) => {
                             Subject
                           </label>
                           <input
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
                             type="text"
                             id="subject"
                             class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -612,6 +654,8 @@ const Dashboard = (props) => {
                             Your message
                           </label>
                           <textarea
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                             id="message"
                             rows="6"
                             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
@@ -619,6 +663,7 @@ const Dashboard = (props) => {
                           ></textarea>
                         </div>
                         <button
+                          onClick={sendEmailForEnquiry}
                           type="button"
                           class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                         >
