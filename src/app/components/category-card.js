@@ -35,7 +35,6 @@ const CategoryCard = (props) => {
           .category-card-image {
             width: 120px;
             height: 120px;
-            object-fit: cover;
             margin-bottom: var(--dl-space-space-unit);
             object-position: bottom;
           }

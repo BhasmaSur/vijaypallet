@@ -452,10 +452,12 @@ const Dashboard = (props) => {
             <section id="vision">
               <div className="home-banner">
                 <div className="home-container05">
-                  <h3 className="home-text19 Heading-3">VISION</h3>
+                  <h3 className="home-text19 Heading-3">
+                    {websiteDetails.vision}
+                  </h3>
                   <span className="home-text20">
                     <span></span>
-                    <span>and Values</span>
+                    <span>{websiteDetails.andValues}</span>
                   </span>
                 </div>
               </div>
@@ -463,17 +465,7 @@ const Dashboard = (props) => {
                 <div className="home-container07">
                   <span className="home-text23">
                     <span>
-                      Our vision is to be an innovative, respected, and
-                      preferred business partner, exemplifying excellence in our
-                      industry through a dynamic, positive, and target-oriented
-                      organization. We prioritize continuous improvement, team
-                      spirit, and high ethical standards based on trust. Our
-                      goal is to exceed customer expectations by delivering
-                      quality products, ensuring on-time delivery, and striving
-                      for zero defects, breakdowns, and accidents. We emphasize
-                      cost-effectiveness, continual improvement, social and
-                      environmental responsibility, and rigorous safety measures
-                      across all work areas.
+                      {websiteDetails.visionPara}
                       <span
                         dangerouslySetInnerHTML={{
                           __html: " ",
@@ -488,7 +480,9 @@ const Dashboard = (props) => {
               <div className="home-full-width-banner section-container">
                 <div className="home-left4">
                   <div className="home-content">
-                    <span className="home-text29">QUALITY POLICY</span>
+                    <span className="home-text29">
+                      {websiteDetails.qualityPolicy}
+                    </span>
                     <span
                       className="home-text30"
                       style={{
@@ -497,13 +491,7 @@ const Dashboard = (props) => {
                         lineHeight: "1.5",
                       }}
                     >
-                      At Vijay Pallet & Box Manufacturers India Pvt. Ltd., we
-                      embrace ISO 9001:2015 standards, prioritizing quality
-                      workmanship, on-time delivery, and superior after-sales
-                      support to meet and exceed customer expectations. We are
-                      committed to statutory and regulatory compliance,
-                      fostering a fulfilling work environment, and continuously
-                      improving our Quality Management System.
+                      {websiteDetails.qualityPara}
                     </span>
                   </div>
                 </div>
@@ -554,18 +542,16 @@ const Dashboard = (props) => {
               </div> */}
                 <div className="home-container09 p-4 sm:p-6 lg:p-8">
                   <h3 className="home-text32 Heading-3 text-xl sm:text-2xl lg:text-3xl">
-                    Vijay Pallet & Box
+                    {websiteDetails.title}
                   </h3>
                   <span className="home-text33 block text-base sm:text-lg lg:text-xl">
-                    <span>
-                      Plot No. 29, Vijay Sadan, Niranjan Housing Society
-                    </span>
+                    <span>{websiteDetails.plotNo}</span>
                     <br />
-                    <span>Pune, Maharashtra</span>
+                    <span>{websiteDetails.puneMaha}</span>
                   </span>
                   <section id="contact" className="mt-4">
                     <span className="home-text36 block text-base sm:text-lg lg:text-xl">
-                      9422314491, 9657222868
+                      {websiteDetails.mobileNumber}
                     </span>
                     <span className="home-text37 block text-base sm:text-lg lg:text-xl">
                       contact@vijaypalletandbox.com
@@ -588,11 +574,10 @@ const Dashboard = (props) => {
                   <section class="bg-white dark:bg-gray-900">
                     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                        Contact Us
+                        {websiteDetails.contactUs}
                       </h2>
                       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                        Need more details of our products & services? Let us
-                        know
+                        {websiteDetails.needMoreDetail}
                       </p>
                       <form action="#" class="space-y-8">
                         <div>
@@ -600,7 +585,7 @@ const Dashboard = (props) => {
                             for="username"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                           >
-                            Your Name
+                            {websiteDetails.yourName}
                           </label>
                           <input
                             value={username}
@@ -617,7 +602,7 @@ const Dashboard = (props) => {
                             for="email"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                           >
-                            Your email
+                            {websiteDetails.yourEmail}
                           </label>
                           <input
                             value={emailId}
@@ -634,7 +619,7 @@ const Dashboard = (props) => {
                             for="subject"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                           >
-                            Subject
+                            {websiteDetails.subject}
                           </label>
                           <input
                             value={subject}
@@ -651,7 +636,7 @@ const Dashboard = (props) => {
                             for="message"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                           >
-                            Your message
+                            {websiteDetails.yourMessage}
                           </label>
                           <textarea
                             value={message}
@@ -667,24 +652,24 @@ const Dashboard = (props) => {
                           type="button"
                           class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                         >
-                          Send Message
+                          {websiteDetails.sendMessage}
                         </button>
                       </form>
                       <div class="mt-10">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                          Select Language
+                          {websiteDetails.selectLanguage}
                         </h2>
                         <p
                           onClick={() => setLanguage(LANGUAGE.ENGLISH)}
                           class="mb-4 text-xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white cursor-pointer"
                         >
-                          English
+                          {websiteDetails.english}
                         </p>
                         <p
                           onClick={() => setLanguage(LANGUAGE.MARATHI)}
                           class="mb-4 text-xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white cursor-pointer"
                         >
-                          Marathi
+                          {websiteDetails.marathi}
                         </p>
                       </div>
                     </div>
