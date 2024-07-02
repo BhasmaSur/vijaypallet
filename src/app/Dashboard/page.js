@@ -149,7 +149,9 @@ const Dashboard = (props) => {
                     <span className="home-text18">₹999</span>
                   </div>
                   <div className="home-btn-group">
-                    <Link href="#trending"><button className="button">Explore the collection</button></Link>
+                    <Link href="#trending">
+                      <button className="button">Explore the collection</button>
+                    </Link>
                   </div>
                 </div>
                 <img
@@ -270,60 +272,60 @@ const Dashboard = (props) => {
               ></CategoryCard>
             </div>
           </div>
-        <section id = "trending">
-          <div className="section-container">
-            <div className="max-width-container">
-              <SectionHeading></SectionHeading>
-              <div className="home-gallery">
-                <div className="home-left1">
-                  <ItemCard
-                    name="Cable Drums"
-                    value="1499"
-                    imageSrc={cabledrums}
-                    rootClassName="rootClassName4"
-                  ></ItemCard>
-                </div>
-                <div className="home-right1">
-                  <div className="home-top">
-                    <div className="home-left2">
-                      <ItemCard
-                        name="Plywood Box"
-                        value="999"
-                        imageSrc={nailedpine2}
-                        rootClassName="rootClassName2"
-                      ></ItemCard>
-                    </div>
-                    <div className="home-right2">
-                      <ItemCard
-                        name="Industry Wooden Box"
-                        value="799"
-                        imageSrc={industrybox}
-                        rootClassName="rootClassName3"
-                      ></ItemCard>
-                    </div>
+          <section id="trending">
+            <div className="section-container">
+              <div className="max-width-container">
+                <SectionHeading></SectionHeading>
+                <div className="home-gallery">
+                  <div className="home-left1">
+                    <ItemCard
+                      name="Cable Drums"
+                      value="1499"
+                      imageSrc={cabledrums}
+                      rootClassName="rootClassName4"
+                    ></ItemCard>
                   </div>
-                  <div className="home-bottom">
-                    <div className="home-left3">
-                      <ItemCard
-                        name="Pallet"
-                        value="599"
-                        imageSrc={pallet}
-                        rootClassName="item-card-root-class-name1"
-                      ></ItemCard>
+                  <div className="home-right1">
+                    <div className="home-top">
+                      <div className="home-left2">
+                        <ItemCard
+                          name="Plywood Box"
+                          value="999"
+                          imageSrc={nailedpine2}
+                          rootClassName="rootClassName2"
+                        ></ItemCard>
+                      </div>
+                      <div className="home-right2">
+                        <ItemCard
+                          name="Industry Wooden Box"
+                          value="799"
+                          imageSrc={industrybox}
+                          rootClassName="rootClassName3"
+                        ></ItemCard>
+                      </div>
                     </div>
-                    <div className="home-right3">
-                      <ItemCard
-                        name="Crate Type Box"
-                        value="899"
-                        imageSrc={cratetypebox2}
-                        rootClassName="item-card-root-class-name6"
-                      ></ItemCard>
+                    <div className="home-bottom">
+                      <div className="home-left3">
+                        <ItemCard
+                          name="Pallet"
+                          value="599"
+                          imageSrc={pallet}
+                          rootClassName="item-card-root-class-name1"
+                        ></ItemCard>
+                      </div>
+                      <div className="home-right3">
+                        <ItemCard
+                          name="Crate Type Box"
+                          value="899"
+                          imageSrc={cratetypebox2}
+                          rootClassName="item-card-root-class-name6"
+                        ></ItemCard>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           </section>
           <section id="vision">
             <div className="home-banner">
@@ -339,27 +341,137 @@ const Dashboard = (props) => {
               <div className="home-container07">
                 <span className="home-text23">
                   <span>
-                    Our vision is to be an innovative, respected, and preferred
-                    business partner, exemplifying excellence in our industry
-                    through a dynamic, positive, and target-oriented
-                    organization. We prioritize continuous improvement, team
-                    spirit, and high ethical standards based on trust. Our goal
-                    is to exceed customer expectations by delivering quality
-                    products, ensuring on-time delivery, and striving for zero
-                    defects, breakdowns, and accidents. We emphasize
-                    cost-effectiveness, continual improvement, social and
-                    environmental responsibility, and rigorous safety measures
-                    across all work areas.
-                    <span
+                    We are committed to be an innovative, most respected and
+                    most preferred business partner for our customers and a
+                    model of excellence for our industry by setting up a
+                    reliable, dynamic, positive, target oriented organization
+                    that believes in continuous improvement, team spirit and
+                    high level of ethics based on trusting relationships. Our
+                    goal is to exceed customer expectations through excellence
+                    in manufacturing and delivering quality product.
+                    {/* <span
                       dangerouslySetInnerHTML={{
                         __html: " ",
                       }}
-                    />
+                    /> */}
                   </span>
                 </span>
               </div>
             </div>
           </section>
+          <section id="values">
+            <div className="home-container06 max-width-container">
+              <div className="home-container07 text-center">
+                <h3 className="text-4xl  home-text19 Heading-3">Values</h3>
+                <br/>
+                <br/>
+                <br/>
+                <ul className="space-y-4 text-left lg:ml-52">
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    On Time Delivery
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Aiming for Zero Defect
+                    <br/>
+                     / Zero Breakdown / Zero Accident.
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Customer Satisfaction.
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Cost Effectiveness
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Continual Improvements
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Social & Environmental Responsibility.
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-6 h-6 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Practising Safety Measures at all Work areas.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section id="policy">
             <div className="home-full-width-banner section-container">
               <div className="home-left4">
@@ -447,7 +559,7 @@ const Dashboard = (props) => {
                     contact@vijaypalletandbox.com
                   </span>
                 </section>
-                <br/>
+                <br />
                 <div className="google-map mt-4">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242221.3872836721!2d73.57675778671873!3d18.451509099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac13fffffff%3A0xe6710018343d0a80!2sVijay%20Pallet%20And%20Box%20Manufacturers%20India%20Pvt%20Ltd!5e0!3m2!1sen!2sus!4v1718907040817!5m2!1sen!2sus"
