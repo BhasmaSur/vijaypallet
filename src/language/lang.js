@@ -146,7 +146,7 @@ export const MARATHI_LANGUAGE = {
   andValues: "आणि मूल्ये",
   visionPara:
     "आमचा दृष्टीकोन एक नाविन्यपूर्ण, आदरणीय आणि पसंतीचा व्यवसाय भागीदार बनण्याचा आहे, जो आमच्या उद्योगात गतिशील, सकारात्मक आणि लक्ष्याभिमुख संस्थेद्वारे उत्कृष्टतेचे उदाहरण देतो. आम्ही विश्वासावर आधारित सतत सुधारणा, सांघिक भावना आणि उच्च नैतिक मानकांना प्राधान्य देतो. दर्जेदार उत्पादने वितरीत करून, वेळेवर वितरण सुनिश्चित करून आणि शून्य दोष, ब्रेकडाउन आणि अपघातांसाठी प्रयत्न करून ग्राहकांच्या अपेक्षा ओलांडणे हे आमचे ध्येय आहे. आम्ही सर्व कार्यक्षेत्रांमध्ये किफायतशीरपणा, सतत सुधारणा, सामाजिक आणि पर्यावरणीय जबाबदारी आणि कठोर सुरक्षा उपायांवर जोर देतो.",
-  qualityPolicy: "Qगुणवत्ता धोरण",
+  qualityPolicy: "गुणवत्ता धोरण",
   qualityPara:
     "विजय पॅलेट आणि बॉक्स मॅन्युफॅक्चरर्स इंडिया प्रा. Ltd., आम्ही ISO 9001:2015 मानके स्वीकारतो, दर्जेदार कारागिरी, वेळेवर डिलिव्हरी आणि ग्राहकांच्या अपेक्षा पूर्ण करण्यासाठी आणि त्यापेक्षा जास्त विक्रीनंतरचे उत्कृष्ट समर्थन याला प्राधान्य देतो. आम्ही वैधानिक आणि नियामक अनुपालनासाठी वचनबद्ध आहोत, कामाचे परिपूर्ण वातावरण निर्माण करण्यासाठी आणि आमच्या गुणवत्ता व्यवस्थापन प्रणालीत सतत सुधारणा करत आहोत.",
   plotNo: "प्लॉट क्र. 29, विजय सदन, निरंजन हाउसिंग सोसायटी",
@@ -163,6 +163,23 @@ export const MARATHI_LANGUAGE = {
   english: "English",
   marathi: "Marathi",
   contactUs: "आमच्याशी संपर्क साधा",
+  companyName: "विजय पॅलेट्स अँड बॉक्सेस मॅन्युफॅक्चर्स इंडिया प्रा. लि.",
+  officeAddress: "कार्यालयाचा पत्ता",
+  factoryAddress: "कारखान्याचा पत्ता",
+  factoryRealAddress:
+    "गट क्र.474, पोस्ट येथे - सारोळा, किकवी-सावर्डे रोड, ता.- भोर, जि. पुणे-412205",
+  office: "कार्यालय",
+  officeNumber: "०२० - २६९००९१/९३",
+  productBranding: "उत्पादन ब्रँडिंग",
+  productBrandingPara1:
+    "आम्ही आमच्या सर्व उत्पादनांवर उत्पादन ब्रँडिंग देखील ऑफर करतो. हे वेअरहाऊसमधील उत्पादनांची ओळख, लेखांकन आणि वितरण सुलभ करते तसेच क्लायंटच्या कंपनीला बाजारपेठेत ओळखण्यास हातभार लावते, जी क्लायंटच्या कंपनीसाठी मूक सेल्समन म्हणून उभी असते.",
+  productBrandingPara2:
+    "प्रोटोटाइप डिझाइनपासून ते सध्याच्या पॅकेजिंगपर्यंत तुमच्या सर्व शिपिंग गरजांमध्ये मदत करण्याचा अनुभव आमच्याकडे आहे.",
+  ourCoreValues: "आमची मूळ मूल्ये",
+  qualityWorkmanship: "दर्जेदार कारागिरी",
+  onTimeDelivery: "वेळेवर वितरण",
+  superiorAfterSales: "विक्री समर्थन नंतर उत्कृष्ट",
+  contactNumber: "संपर्क क्रमांक",
 };
 
 export const ENGLISH_LANGUAGE = {
@@ -326,4 +343,21 @@ export const ENGLISH_LANGUAGE = {
   english: "इंग्रजी",
   marathi: "मराठी",
   contactUs: "Contact Us",
+  companyName: "Vijay Pallets & Boxes Manufactures India Pvt. Ltd.",
+  officeAddress: "Office Address",
+  factoryAddress: "Factory Address",
+  factoryRealAddress:
+    "Gat No.474, At post - Sarola, Kikwi-Sawardare Road, Tal.- Bhor, Dist. Pune-412205",
+  office: "Office",
+  officeNumber: "020 - 2690091/93",
+  productBranding: "PRODUCT BRANDING",
+  productBrandingPara1:
+    "We also offer product branding on all our products. This facilitates the identification, accounting and distribution of products in the warehouse as well as contributes to the recognition of the client's company in the market, which stands as a silent salesman for the client's company.",
+  productBrandingPara2:
+    "From prototype design to existing packaging we have the experience to help with all your shipping needs.",
+  ourCoreValues: "Our Core Values",
+  qualityWorkmanship: "Quality workmanship",
+  onTimeDelivery: "On time delivery",
+  superiorAfterSales: "Superior after sales support",
+  contactNumber: "Contact number",
 };
