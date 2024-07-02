@@ -57,9 +57,8 @@ const Dashboard = (props) => {
     window.location.reload();
   };
   useEffect(() => {
-    console.log(language);
     const currentWebData =
-      language === LANGUAGE.ENGLISH ? ENGLISH_LANGUAGE : MARATHI_LANGUAGE;
+      language === LANGUAGE.MARATHI ? MARATHI_LANGUAGE : ENGLISH_LANGUAGE;
     setWebsiteDetails({ ...currentWebData });
   }, [language]);
 
