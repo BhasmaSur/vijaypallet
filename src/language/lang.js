@@ -180,6 +180,16 @@ export const MARATHI_LANGUAGE = {
   onTimeDelivery: "वेळेवर वितरण",
   superiorAfterSales: "विक्री समर्थन नंतर उत्कृष्ट",
   contactNumber: "संपर्क क्रमांक",
+  values : "मूल्ये",
+  onTimeDelivery2 : "वेळेवर वितरण",
+  aimingZeroDefect : "शून्य दोषाचे लक्ष्य",
+  zeroBreakdown : "शून्य ब्रेकडाउन",
+  zeroAccident : "शून्य अपघात",
+  customerSatisfaction :"ग्राहक समाधान",
+  costEffectiveness :"खर्च परिणामकारकता",
+  continualImprovements : "सतत सुधारणा",
+  socialAndEnvironmental :"सामाजिक आणि पर्यावरणीय जबाबदारी",
+  practisingSafety :"सर्व कामाच्या ठिकाणी सुरक्षा उपायांचा सराव करणे",
 };
 
 export const ENGLISH_LANGUAGE = {
@@ -360,4 +370,14 @@ export const ENGLISH_LANGUAGE = {
   onTimeDelivery: "On time delivery",
   superiorAfterSales: "Superior after sales support",
   contactNumber: "Contact number",
+  values : "Values",
+  onTimeDelivery2 : "On Time Delivery",
+  aimingZeroDefect : "Aiming for Zero Defect",
+  zeroBreakdown : "Zero Breakdown",
+  zeroAccident : "Zero Accident",
+  customerSatisfaction :"Customer Satisfaction",
+  costEffectiveness :"Cost Effectiveness",
+  continualImprovements : "Continual Improvements",
+  socialAndEnvironmental :"Social & Environmental Responsibility",
+  practisingSafety :"Practising Safety Measures at all Work areas",
 };
