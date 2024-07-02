@@ -463,6 +463,116 @@ const Dashboard = (props) => {
                   </span>
                 </div>
               </div>
+              <section>
+                <div>
+                  <h3 className="text-4xl  home-text19 text-center mt-10">
+                    {websiteDetails.values}
+                  </h3>
+                  <br />
+                  <ul className="space-y-4 text-left">
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.onTimeDelivery2}
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.aimingZeroDefect}
+                      <br />/ {websiteDetails.zeroBreakdown} /{" "}
+                      {websiteDetails.zeroAccident}
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.customerSatisfaction}
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.costEffectiveness}
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.continualImprovements}
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.socialAndEnvironmental}
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        className="w-6 h-6 mr-2 text-green-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {websiteDetails.practisingSafety}
+                    </li>
+                  </ul>
+                </div>
+              </section>
               {/* <FeaturesSection sectionTitle="Our Values" data={featureListData} /> */}
             </section>
             <section id="policy">
@@ -589,7 +699,8 @@ const Dashboard = (props) => {
                   </span>
                   <section id="contact" className="mt-4">
                     <span className="home-text36 block text-base sm:text-lg lg:text-xl">
-                      {websiteDetails.contactNumber} : {websiteDetails.mobileNumber}
+                      {websiteDetails.contactNumber} :{" "}
+                      {websiteDetails.mobileNumber}
                     </span>
                     <span className="home-text36 block text-base sm:text-lg lg:text-xl">
                       {websiteDetails.office} : {websiteDetails.officeNumber}
