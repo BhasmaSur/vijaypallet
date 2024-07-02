@@ -31,20 +31,8 @@ import ItemModal from "../components/item-modal";
 import Modal from "../components/modal";
 import { CATEGORY_DETAIL_LABELS, getCategoryDetail } from "@/utility/dataUtil";
 import { sendEmail } from "@/utility/emailService";
+import BrandCard from "../components/brand-card";
 
-const itemPara = [
-  "We are manufacturer and supplier of wooden packaging boxes. We give our customers quality products and being the best wooden boxes manufacturer in Pune.",
-  "These wooden boxes are manufactured after heat treated treatment of wood. Because of this treatment, we give you the assurance of high quality wooden box.",
-  "We provide high quality products as per the industrial requirements. We are famous wooden boxes manufacturer in Pune because of our quality products and timely delivery.",
-  "Products are listed as packaging box, wooden plywood box.",
-];
-
-const itemHeading = {
-  h5: "Wooden Boxes",
-  h6: "Features of Wooden Boxes",
-};
-
-const features = ["Compact Designs", "User Friendly", "Good Quality"];
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [websiteDetails, setWebsiteDetails] = useState(null);
@@ -475,6 +463,7 @@ const Dashboard = (props) => {
                   </span>
                 </div>
               </div>
+              {/* <FeaturesSection sectionTitle="Our Values" data={featureListData} /> */}
             </section>
             <section id="policy">
               <div className="home-full-width-banner section-container">
@@ -493,11 +482,46 @@ const Dashboard = (props) => {
                     >
                       {websiteDetails.qualityPara}
                     </span>
+                    <span className="home-text17 mt-10 mb-4">
+                      {websiteDetails.ourCoreValues}
+                    </span>
+                    <span
+                      className="home-text30"
+                      style={{
+                        display: "block",
+                        textAlign: "justify",
+                        lineHeight: "1.5",
+                      }}
+                    >
+                      <ul class="list-disc">
+                        <li>{websiteDetails.qualityWorkmanship}</li>
+                        <li>{websiteDetails.onTimeDelivery}</li>
+                        <li>{websiteDetails.superiorAfterSales}</li>
+                      </ul>
+                    </span>
                   </div>
                 </div>
                 <img alt="VPB" className="home-image6" src={lookbook} />{" "}
               </div>
             </section>
+          </div>
+          <div className="section-container column">
+            <div className="max-width-container">
+              <section id="boxes">
+                <SectionHeading
+                  heading={websiteDetails.productBranding}
+                  subtitle={websiteDetails.productBrandingPara1}
+                ></SectionHeading>
+              </section>
+              <div className="home-cards-container">
+                <BrandCard
+                  name={websiteDetails.skiddedBaseBox}
+                  categoryImg={skidded}
+                  onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.SKIDDED_BASE_BOX}
+                ></BrandCard>
+              </div>
+            </div>
           </div>
           <div className="home-footer">
             <div className="max-width-container">
@@ -545,13 +569,30 @@ const Dashboard = (props) => {
                     {websiteDetails.title}
                   </h3>
                   <span className="home-text33 block text-base sm:text-lg lg:text-xl">
-                    <span>{websiteDetails.plotNo}</span>
+                    <span>
+                      <h1 className="home-text17 mt-10 mb-4">
+                        {websiteDetails.officeAddress}
+                      </h1>
+                      {websiteDetails.plotNo}
+                    </span>
                     <br />
                     <span>{websiteDetails.puneMaha}</span>
                   </span>
+                  <span className="home-text33 block text-base sm:text-lg lg:text-xl">
+                    <span>
+                      <h1 className="home-text17 mt-10 mb-4">
+                        {websiteDetails.factoryAddress}
+                      </h1>
+                      {websiteDetails.factoryRealAddress}
+                    </span>
+                    <br />
+                  </span>
                   <section id="contact" className="mt-4">
                     <span className="home-text36 block text-base sm:text-lg lg:text-xl">
-                      {websiteDetails.mobileNumber}
+                      {websiteDetails.contactNumber} : {websiteDetails.mobileNumber}
+                    </span>
+                    <span className="home-text36 block text-base sm:text-lg lg:text-xl">
+                      {websiteDetails.office} : {websiteDetails.officeNumber}
                     </span>
                     <span className="home-text37 block text-base sm:text-lg lg:text-xl">
                       contact@vijaypalletandbox.com
