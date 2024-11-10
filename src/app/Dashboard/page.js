@@ -258,184 +258,67 @@ const Dashboard = (props) => {
                 </div>
               </div>
             </div>
-            <div className="section-container column">
-              <div className="max-width-container">
-                <section id="boxes">
-                  <SectionHeading
-                    heading={websiteDetails.shopByBoxCategories}
-                    subtitle={websiteDetails.startShopping}
-                  ></SectionHeading>
-                </section>
-                <div className="home-cards-container">
-                  <CategoryCard
-                    name={websiteDetails.skiddedBaseBox}
-                    categoryImg={skidded}
-                    onClickCategory={onClickCategory}
-                    categoryCode={CATEGORY_DETAIL_LABELS.SKIDDED_BASE_BOX}
-                  ></CategoryCard>
-                  <CategoryCard
-                    name={websiteDetails.crateTypeBox}
-                    categoryImg={cratetypebox}
-                    onClickCategory={onClickCategory}
-                    categoryCode={CATEGORY_DETAIL_LABELS.CRATE_TYPE_BOX}
-                  ></CategoryCard>
-                  <CategoryCard
-                    name={websiteDetails.nailedPine}
-                    categoryImg={nailedpine}
-                    onClickCategory={onClickCategory}
-                    categoryCode={CATEGORY_DETAIL_LABELS.NAILED_PINE}
-                  ></CategoryCard>
-                  <CategoryCard
-                    name={websiteDetails.naillessPlywoodBox}
-                    categoryImg={nailless}
-                    onClickCategory={onClickCategory}
-                    categoryCode={CATEGORY_DETAIL_LABELS.NAIL_LESS_PLYWOOD_BOX}
-                  ></CategoryCard>
-                  <CategoryCard
-                    name={websiteDetails.standardBox}
-                    categoryImg={standard}
-                    onClickCategory={onClickCategory}
-                    categoryCode={CATEGORY_DETAIL_LABELS.STANDARD_BOX}
-                  ></CategoryCard>
-                </div>
-              </div>
-              <section id="about">
-                <div className="home-banner">
-                  <div className="home-container05">
-                    <h3 className="home-text19 Heading-3">
-                      {websiteDetails.vijay}
-                    </h3>
-                    <span className="home-text20">
+            <br />
+            <section id="whatweprovide">
+              <div className="home-banner">
+                <div className="home-container05">
+                  <h3 className="home-text19 Heading-3">
+                    {websiteDetails.about}
+                  </h3>
+                  {/* <span className="home-text20">
                       <span></span>
                       <span>{websiteDetails.palletAndBoxes}</span>
-                    </span>
-                  </div>
+                    </span> */}
                 </div>
-                <div className="home-container06 max-width-container">
-                  <div className="home-container07">
-                    <span className="home-text23">
-                      <br></br>
-                      <span>
-                        {websiteDetails.intro}
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: " ",
-                          }}
-                        />
-                      </span>
+              </div>
+              <div className="home-container06 max-width-container">
+                <div className="home-container07">
+                  <span className="home-text23">
+                    <span>
+                      {websiteDetails.intro}
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: " ",
+                        }}
+                      />
                     </span>
-                    {/* <img
+                  </span>
+                  {/* <img
                   alt="vpb"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTk5JyBoZWlnaHQ9JzIwMCcgdmlld0JveD0nMCAwIDE5OSAyMDAnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00zNy4zMDI2IDcxLjI5MjVMOTkuMzgyNyAxODIuMzEzTDE2MS40NjMgNzEuMjkyNUwxNzUuNjIyIDIwMEgxOTguNzY1TDE3NS42MjIgMEw5OS4zODI3IDEzNy45NTlMMjMuMTQzOSAwTDAgMjAwSDIzLjE0MzlMMzcuMzAyNiA3MS4yOTI1WicgZmlsbD0nYmxhY2snIGZpbGwtb3BhY2l0eT0nMC4wNicvPgo8L3N2Zz4K"
                   className="home-svg"
                 /> */}
-                    {/* <button className="button">Read more</button> */}
-                  </div>
-                </div>
-              </section>
-            </div>
-            <br />
-            <br />
-            <div className="max-width-container">
-              <section id="pallets">
-                <SectionHeading
-                  heading={websiteDetails.shopByPalletAndCrates}
-                  subtitle={websiteDetails.shopByCategories}
-                ></SectionHeading>
-              </section>
-              <div className="home-cards-container">
-                <CategoryCard
-                  name={websiteDetails.europeanWayPallet}
-                  categoryImg={european}
-                  onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.EUROPEAN_WAY_PALLET}
-                ></CategoryCard>
-                <CategoryCard
-                  name={websiteDetails.pineWoodPallet}
-                  categoryImg={pinewoodpallet}
-                  onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.PINE_WOOD_PALLET}
-                ></CategoryCard>
-                <CategoryCard
-                  name={websiteDetails.fourwatCloseBoardPallet}
-                  categoryImg={fourwaypallet}
-                  onClickCategory={onClickCategory}
-                  categoryCode={
-                    CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET
-                  }
-                ></CategoryCard>
-                <CategoryCard
-                  name={websiteDetails.rubberWoodCrate}
-                  categoryImg={rubberwoordcrate}
-                  onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.RUBBER_WOOD_CRATE}
-                ></CategoryCard>
-                <CategoryCard
-                  name={websiteDetails.woodenPackagingCrate}
-                  categoryImg={woodenpackagingcrate}
-                  onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.WOODEN_PACKAGING_CRATE}
-                ></CategoryCard>
-              </div>
-            </div>
-            <section id="trending">
-              <div className="section-container">
-                <div className="max-width-container">
-                  <SectionHeading
-                    heading={websiteDetails.trendingItems}
-                    subtitle={websiteDetails.exploreOurMostTrending}
-                  ></SectionHeading>
-                  <div className="home-gallery">
-                    <div className="home-left1">
-                      <ItemCard
-                        name={websiteDetails.cableDrums}
-                        value="1499"
-                        imageSrc={cabledrums}
-                        rootClassName="rootClassName4"
-                      ></ItemCard>
-                    </div>
-                    <div className="home-right1">
-                      <div className="home-top">
-                        <div className="home-left2">
-                          <ItemCard
-                            name={websiteDetails.plywoodBox}
-                            value="999"
-                            imageSrc={nailedpine2}
-                            rootClassName="rootClassName2"
-                          ></ItemCard>
-                        </div>
-                        <div className="home-right2">
-                          <ItemCard
-                            name={websiteDetails.industryWoodenBox}
-                            value="799"
-                            imageSrc={industrybox}
-                            rootClassName="rootClassName3"
-                          ></ItemCard>
-                        </div>
-                      </div>
-                      <div className="home-bottom">
-                        <div className="home-left3">
-                          <ItemCard
-                            name={websiteDetails.pallet}
-                            value="599"
-                            imageSrc={pallet}
-                            rootClassName="item-card-root-class-name1"
-                          ></ItemCard>
-                        </div>
-                        <div className="home-right3">
-                          <ItemCard
-                            name={websiteDetails.crateTypeBox}
-                            value="899"
-                            imageSrc={cratetypebox2}
-                            rootClassName="item-card-root-class-name6"
-                          ></ItemCard>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {/* <button className="button">Read more</button> */}
                 </div>
               </div>
             </section>
+            <section id="about">
+              <div className="home-banner">
+                <div className="home-container05">
+                  {/* <h3 className="home-text19 Heading-3">
+                      {websiteDetails.vijay}
+                    </h3> */}
+                  <span className="home-text20">
+                    <span></span>
+                    <span>{websiteDetails.whatwedo}</span>
+                  </span>
+                </div>
+              </div>
+              <div className="home-container06 max-width-container">
+                <div className="home-container07">
+                  <h3 className="point-title">We offer heat treatment</h3>
+                  <h3 className="point-title">
+                    We supply wooden pallets and boxes
+                  </h3>
+                  <h3 className="point-title">We produce pallet collars</h3>
+                  <h3 className="point-title">
+                    We offer customized packaging products
+                  </h3>
+                </div>
+              </div>
+            </section>
+            <br />
+            <br />
             <section id="vision">
               <div className="home-banner">
                 <div className="home-container05">
@@ -613,6 +496,177 @@ const Dashboard = (props) => {
                 <img alt="VPB" className="home-image6" src={lookbook} />{" "}
               </div>
             </section>
+            <br />
+            <section id="Zero defect philosophy">
+              <div className="home-banner">
+                <div className="home-container05">
+                  <span className="home-text20">
+                    <h3>Zero Defect</h3>
+                    <h3>Philosophy</h3>
+                  </span>
+                </div>
+              </div>
+              <div className="home-container06 max-width-container">
+                <div className="home-container07">
+                  <h3 className="point-title">
+                    Zero complaints - First Time OK
+                  </h3>
+                  <h3 className="point-title">
+                    Zero inefficiency - Shorter Development Lead Time
+                  </h3>
+                  <h3 className="point-title">
+                    Zero wastage - Low Manufacturing Cost
+                  </h3>
+                  <h3 className="point-title">
+                    Zero pollution - Environment Sensitive
+                  </h3>
+                </div>
+              </div>
+            </section>
+            <div className="section-container column">
+              <div className="max-width-container">
+                <section id="boxes">
+                  <SectionHeading
+                    heading={websiteDetails.shopByBoxCategories}
+                    subtitle={websiteDetails.startShopping}
+                  ></SectionHeading>
+                </section>
+                <div className="home-cards-container">
+                  <CategoryCard
+                    name={websiteDetails.skiddedBaseBox}
+                    categoryImg={skidded}
+                    onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.SKIDDED_BASE_BOX}
+                  ></CategoryCard>
+                  <CategoryCard
+                    name={websiteDetails.crateTypeBox}
+                    categoryImg={cratetypebox}
+                    onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.CRATE_TYPE_BOX}
+                  ></CategoryCard>
+                  <CategoryCard
+                    name={websiteDetails.nailedPine}
+                    categoryImg={nailedpine}
+                    onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.NAILED_PINE}
+                  ></CategoryCard>
+                  <CategoryCard
+                    name={websiteDetails.naillessPlywoodBox}
+                    categoryImg={nailless}
+                    onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.NAIL_LESS_PLYWOOD_BOX}
+                  ></CategoryCard>
+                  <CategoryCard
+                    name={websiteDetails.standardBox}
+                    categoryImg={standard}
+                    onClickCategory={onClickCategory}
+                    categoryCode={CATEGORY_DETAIL_LABELS.STANDARD_BOX}
+                  ></CategoryCard>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div className="max-width-container">
+              <section id="pallets">
+                <SectionHeading
+                  heading={websiteDetails.shopByPalletAndCrates}
+                  subtitle={websiteDetails.shopByCategories}
+                ></SectionHeading>
+              </section>
+              <div className="home-cards-container">
+                <CategoryCard
+                  name={websiteDetails.europeanWayPallet}
+                  categoryImg={european}
+                  onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.EUROPEAN_WAY_PALLET}
+                ></CategoryCard>
+                <CategoryCard
+                  name={websiteDetails.pineWoodPallet}
+                  categoryImg={pinewoodpallet}
+                  onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.PINE_WOOD_PALLET}
+                ></CategoryCard>
+                <CategoryCard
+                  name={websiteDetails.fourwatCloseBoardPallet}
+                  categoryImg={fourwaypallet}
+                  onClickCategory={onClickCategory}
+                  categoryCode={
+                    CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET
+                  }
+                ></CategoryCard>
+                <CategoryCard
+                  name={websiteDetails.rubberWoodCrate}
+                  categoryImg={rubberwoordcrate}
+                  onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.RUBBER_WOOD_CRATE}
+                ></CategoryCard>
+                <CategoryCard
+                  name={websiteDetails.woodenPackagingCrate}
+                  categoryImg={woodenpackagingcrate}
+                  onClickCategory={onClickCategory}
+                  categoryCode={CATEGORY_DETAIL_LABELS.WOODEN_PACKAGING_CRATE}
+                ></CategoryCard>
+              </div>
+            </div>
+            <section id="trending">
+              <div className="section-container">
+                <div className="max-width-container">
+                  <SectionHeading
+                    heading={websiteDetails.trendingItems}
+                    subtitle={websiteDetails.exploreOurMostTrending}
+                  ></SectionHeading>
+                  <div className="home-gallery">
+                    <div className="home-left1">
+                      <ItemCard
+                        name={websiteDetails.cableDrums}
+                        value="1499"
+                        imageSrc={cabledrums}
+                        rootClassName="rootClassName4"
+                      ></ItemCard>
+                    </div>
+                    <div className="home-right1">
+                      <div className="home-top">
+                        <div className="home-left2">
+                          <ItemCard
+                            name={websiteDetails.plywoodBox}
+                            value="999"
+                            imageSrc={nailedpine2}
+                            rootClassName="rootClassName2"
+                          ></ItemCard>
+                        </div>
+                        <div className="home-right2">
+                          <ItemCard
+                            name={websiteDetails.industryWoodenBox}
+                            value="799"
+                            imageSrc={industrybox}
+                            rootClassName="rootClassName3"
+                          ></ItemCard>
+                        </div>
+                      </div>
+                      <div className="home-bottom">
+                        <div className="home-left3">
+                          <ItemCard
+                            name={websiteDetails.pallet}
+                            value="599"
+                            imageSrc={pallet}
+                            rootClassName="item-card-root-class-name1"
+                          ></ItemCard>
+                        </div>
+                        <div className="home-right3">
+                          <ItemCard
+                            name={websiteDetails.crateTypeBox}
+                            value="899"
+                            imageSrc={cratetypebox2}
+                            rootClassName="item-card-root-class-name6"
+                          ></ItemCard>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           <div className="section-container column">
             <div className="max-width-container">
@@ -620,6 +674,10 @@ const Dashboard = (props) => {
                 <SectionHeading
                   heading={websiteDetails.productBranding}
                   subtitle={websiteDetails.productBrandingPara1}
+                ></SectionHeading>
+                <SectionHeading
+                  heading={websiteDetails.productBranding2}  
+                  subtitle={websiteDetails.productBrandingPara2}
                 ></SectionHeading>
               </section>
               <div className="home-cards-container">
@@ -635,44 +693,6 @@ const Dashboard = (props) => {
           <div className="home-footer">
             <div className="max-width-container">
               <footer className="home-footer1">
-                {/* <div className="home-container09">
-                <h3 className="home-text32 Heading-3">MOBILLIO</h3>
-                <span className="home-text33">
-                  <span>4517 Washington Ave. Manchester, Kentucky 39495,</span>
-                  <br></br>
-                  <span>United States</span>
-                </span>
-                <section id="contact">
-                  <span className="home-text36">(671) 555-0110</span>
-                  <span className="home-text37">contact@mobillio.com</span>
-                </section>
-              </div> */}
-                {/* <div className="home-links-container">
-                <div className="home-container10">
-                  <span className="home-text38">Categories</span>
-                  <span className="home-text39">Collections</span>
-                  <span className="home-text40">Desks</span>
-                  <span className="home-text41">Furniture</span>
-                  <span className="home-text42">Lamps</span>
-                  <span className="home-text43">Plants</span>
-                  <span className="home-text44">Decoration</span>
-                </div>
-                <div className="home-container11">
-                  <span className="home-text45">Company</span>
-                  <span className="home-text46">Shop</span>
-                  <span className="home-text47">Lookbook</span>
-                  <span className="home-text48">Specials</span>
-                  <span className="home-text49">About</span>
-                  <span className="home-text50">Blog</span>
-                </div>
-                <div className="home-container12">
-                  <span className="home-text51">Resources</span>
-                  <span className="home-text52">Contact us</span>
-                  <span className="home-text53">Order</span>
-                  <span className="home-text54">Track your order</span>
-                  <span className="home-text55">Shipping &amp; Delivery</span>
-                </div>
-              </div> */}
                 <div className="home-container09 p-4 sm:p-6 lg:p-8">
                   <h3 className="home-text32 Heading-3 text-xl sm:text-2xl lg:text-3xl">
                     {websiteDetails.title}
