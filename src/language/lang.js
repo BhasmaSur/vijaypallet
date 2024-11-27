@@ -12,9 +12,41 @@ export const MARATHI_LANGUAGE = {
   policy: "धोरण",
   contact: "संपर्क",
   title: "विजय पॅलेट आणि बॉक्स",
+  whatWeDoP1 : "आम्ही उष्णता उपचार ऑफर करतो",
+  whatWeDoP2 : "आम्ही लाकडी पॅलेट आणि बॉक्स पुरवतो",
+  whatWeDoP3 : "आम्ही पॅलेट कॉलर तयार करतो",
+  whatWeDoP4 : "आम्ही सानुकूलित पॅकेजिंग उत्पादने ऑफर करतो",
   leadingManufacturing: "अग्रगण्य उत्पादन कंपनी",
   ofWoodenPallet: "लाकडी पॅलेट आणि बॉक्सेस",
+  cableDrumsPallet: "केबल ड्रम, पॅलेट कॉलर आणि",
+  specialPurposeWooden: "विशेष उद्देश लाकडी पॅकेजिंग",
+  downloadBrochure: "माहितीपत्रक डाउनलोड करा",
   durability: "टिकाऊपणा",
+  boxesTitle: "पेट्या",
+  products: "उत्पादने",
+  zeroDefect : "शून्य दोष",
+  philosophy : "तत्वज्ञान",
+  zeroComplaints : "शून्य तक्रारी - प्रथमच ठीक आहे",
+  zeroInefficiency : "शून्य अकार्यक्षमता - कमी विकास आघाडी वेळ",
+  zeroWastage : "शून्य अपव्यय - कमी उत्पादन खर्च",
+  zeroPollution : "शून्य प्रदूषण - पर्यावरण संवेदनशील",
+  boxesContent:
+    "लाकडी पेटी हे बहुमुखी, टिकाऊ कंटेनर असतात जे सहसा स्टोरेज, वाहतूक आणि सजावटीसाठी वापरले जातात. ते विविध प्रकारच्या लाकडापासून बनविलेले आहेत, ते सामर्थ्य आणि सौंदर्याचे आकर्षण दोन्ही देतात आणि वेगवेगळ्या फिनिश किंवा कोरीव कामांसह सानुकूलित केले जाऊ शकतात. घरगुती वस्तू आयोजित करण्यासाठी किंवा अडाणी सजावट म्हणून वापरल्या गेल्या तरीही, लाकडी पेटी कोणत्याही जागेत कार्यक्षमता आणि आकर्षण दोन्ही आणतात",
+  woodenPallets: "लाकडी पॅलेट",
+  woodenPalletsContent:
+    "लाकडी पॅलेट्स हे बळकट, पुन्हा वापरता येण्याजोगे प्लॅटफॉर्म असतात जे सामान्यतः वस्तूंची वाहतूक करण्यासाठी, वस्तूंचे स्टॅकिंग करण्यासाठी आणि गोदामांमध्ये उत्पादने साठवण्यासाठी वापरले जातात. टिकाऊ लाकडापासून बनविलेले, ते जड भार हाताळण्यासाठी आणि फोर्कलिफ्ट किंवा पॅलेट जॅकसह सुलभ हालचाली सुलभ करण्यासाठी डिझाइन केलेले आहेत. लॉजिस्टिक्सच्या पलीकडे, लाकडी पॅलेट्स DIY प्रकल्प आणि फर्निचर डिझाइनमध्ये त्यांच्या अडाणी आकर्षण आणि अष्टपैलुत्वामुळे लोकप्रिय आहेत",
+  palletCollars: "पॅलेट कॉलर",
+  palletCollarsContent:
+    "पॅलेट कॉलर हे अष्टपैलू लाकडी फ्रेम्स आहेत ज्यांना मानक पॅलेटसह जोडले जाऊ शकते, वस्तू साठवण्यासाठी आणि वाहतूक करण्यासाठी सुरक्षित, स्टॅक करण्यायोग्य कंटेनर तयार केले जाऊ शकतात. ते अतिरिक्त उंची आणि संरक्षण प्रदान करतात, हाताळणी दरम्यान वस्तू हलवण्यापासून किंवा पडण्यापासून प्रतिबंधित करतात. अनेकदा गोदामांमध्ये आणि लॉजिस्टिक्समध्ये वापरल्या जाणाऱ्या, पॅलेट कॉलर सुलभ प्रवेश राखून उत्पादनांचे आयोजन करण्यासाठी किफायतशीर, पुन्हा वापरण्यायोग्य उपाय देतात",
+  cableDrums: "केबल ड्रम्स",
+  cableDrumsContent:
+    "केबल ड्रम हे बेलनाकार स्पूल आहेत जे केबल्स, वायर्स किंवा होसेस वळण आणि साठवण्यासाठी वापरले जातात, ज्यामुळे त्यांची वाहतूक आणि हाताळणी सुलभ होते. सामान्यत: लाकूड, धातू किंवा प्लॅस्टिकचे बनलेले, ते साठवण आणि वाहतुकीदरम्यान केबलचे नुकसान आणि गोंधळापासून संरक्षण करतात. केबल ड्रम सामान्यतः बांधकाम, दूरसंचार आणि इलेक्ट्रिकल सारख्या उद्योगांमध्ये लांब केबल लांबी कार्यक्षमतेने व्यवस्थापित करण्यासाठी वापरले जातात",
+  customPackaging: "सानुकूल पॅकेजिंग",
+  customPackagingContent:
+    "कधीकधी कार्य करणारी अद्वितीय रचना इतर प्रत्येकजण वापरत नाही. आपल्याला आवश्यक असलेली एकच रचना महत्त्वाची आहे. आम्ही जटिल वातावरणासाठी सानुकूलित पॅकेजिंग उत्पादने आणि उपाय ऑफर करतो. सानुकूलित पॅकेजिंग हे एक अद्वितीय समाधान आहे, जे अनुप्रयोगाच्या अचूक पॅकेजिंग आवश्यकता पूर्ण करण्यासाठी निर्दिष्ट, डिझाइन केलेले आणि ऑप्टिमाइझ केलेले आहे",
+  productBrandingTitle: "उत्पादन ब्रँडिंग",
+  productBrandingContent:
+    "आम्ही आमच्या सर्व उत्पादनांवर उत्पादन ब्रँडिंग देखील ऑफर करतो. हे वेअरहाऊसमधील उत्पादनांची ओळख, लेखा आणि वितरण सुलभ करते तसेच क्लायंटच्या कंपनीला बाजारपेठेत ओळखण्यास हातभार लावते, जी क्लायंटच्या कंपनीसाठी मूक सेल्समन म्हणून उभी असते",
   from: "पासून",
   exploreTheCollection: "संग्रह एक्सप्लोर करा",
   shopByBoxCategories: "बॉक्स श्रेणीनुसार खरेदी करा",
@@ -37,7 +69,8 @@ export const MARATHI_LANGUAGE = {
   rubberWoodCrate: "रबर लाकडी क्रेट",
   woodenPackagingCrate: "लाकडी पॅकेजिंग क्रेट",
   trendingItems: "केबल ड्रम आणि ट्रेंडिंग आयटम",
-  exploreOurMostTrending: "वापरण्यास सुलभ, वापरकर्ता अनुकूल, केबल्स आणि तारांची सुलभ वाहतूक",
+  exploreOurMostTrending:
+    "वापरण्यास सुलभ, वापरकर्ता अनुकूल, केबल्स आणि तारांची सुलभ वाहतूक",
   plywoodBox: "प्लायवुड बॉक्स",
   industryWoodenBox: "उद्योग लाकडी पेटी",
   cableDrums: "केबल ड्रम्स",
@@ -171,9 +204,11 @@ export const MARATHI_LANGUAGE = {
   office: "कार्यालय",
   officeNumber: "०२० - २६९००९१/९३",
   productBranding: "सानुकूलित पॅकेजिंग",
-  productBrandingPara1: "कधीकधी काम करणारी युनिक डिझाईन इतर प्रत्येकजण वापरत नसलेली असते. तुम्हाला आवश्यक असलेली एकमेव रचना महत्त्वाची असते. आम्ही सानुकूलित पॅकेजिंग उत्पादने आणि जटिल वातावरणासाठी उपाय ऑफर करतो. सानुकूलित पॅकेजिंग हे एक अद्वितीय समाधान आहे, निर्दिष्ट केलेले, डिझाइन केलेले आणि अनुप्रयोगाच्या अचूक पॅकेजिंग आवश्यकता पूर्ण करण्यासाठी ऑप्टिमाइझ केले आहे.",
-  productBrandingPara2: "आम्ही आमच्या सर्व उत्पादनांवर उत्पादन ब्रँडिंग देखील ऑफर करतो. यामुळे वेअरहाऊसमधील उत्पादनांची ओळख, लेखा आणि वितरण सुलभ होते तसेच क्लायंटच्या कंपनीची बाजारपेठेत ओळख होण्यास हातभार लागतो, जी क्लायंटच्या कंपनीसाठी एक मूक सेल्समन म्हणून उभी असते. ",
-  productBranding2 : "उत्पादन ब्रँडिंग",
+  productBrandingPara1:
+    "कधीकधी काम करणारी युनिक डिझाईन इतर प्रत्येकजण वापरत नसलेली असते. तुम्हाला आवश्यक असलेली एकमेव रचना महत्त्वाची असते. आम्ही सानुकूलित पॅकेजिंग उत्पादने आणि जटिल वातावरणासाठी उपाय ऑफर करतो. सानुकूलित पॅकेजिंग हे एक अद्वितीय समाधान आहे, निर्दिष्ट केलेले, डिझाइन केलेले आणि अनुप्रयोगाच्या अचूक पॅकेजिंग आवश्यकता पूर्ण करण्यासाठी ऑप्टिमाइझ केले आहे.",
+  productBrandingPara2:
+    "आम्ही आमच्या सर्व उत्पादनांवर उत्पादन ब्रँडिंग देखील ऑफर करतो. यामुळे वेअरहाऊसमधील उत्पादनांची ओळख, लेखा आणि वितरण सुलभ होते तसेच क्लायंटच्या कंपनीची बाजारपेठेत ओळख होण्यास हातभार लागतो, जी क्लायंटच्या कंपनीसाठी एक मूक सेल्समन म्हणून उभी असते. ",
+  productBranding2: "उत्पादन ब्रँडिंग",
   ourCoreValues: "आमची मूळ मूल्ये",
   qualityWorkmanship: "दर्जेदार कारागिरी",
   onTimeDelivery: "वेळेवर वितरण",
@@ -189,7 +224,7 @@ export const MARATHI_LANGUAGE = {
   continualImprovements: "सतत सुधारणा",
   socialAndEnvironmental: "सामाजिक आणि पर्यावरणीय जबाबदारी",
   practisingSafety: "सर्व कामाच्या ठिकाणी सुरक्षा उपायांचा सराव करणे",
-  zerodefect: "शून्य दोष तत्वज्ञान"
+  zerodefect: "शून्य दोष तत्वज्ञान",
 };
 
 export const ENGLISH_LANGUAGE = {
@@ -198,11 +233,43 @@ export const ENGLISH_LANGUAGE = {
   vision: "VISION",
   pallets: "PALLETS",
   boxes: "BOXES",
+  boxesTitle: "Boxes",
+  products: "PRODUCTS",
+  whatWeDoP1 : "We offer heat treatment",
+  whatWeDoP2 : "We supply wooden pallets and boxes",
+  whatWeDoP3 : "We produce pallet collars",
+  whatWeDoP4 : "We offer customized packaging products",
+  zeroDefect : "Zero Defect",
+  philosophy : "Philosophy",
+  zeroComplaints : "Zero complaints - First Time OK",
+  zeroInefficiency : "Zero inefficiency - Shorter Development Lead Time",
+  zeroWastage : "Zero wastage - Low Manufacturing Cost",
+  zeroPollution : "Zero pollution - Environment Sensitive",
+  boxesContent:
+    "Wooden boxes are versatile, durable containers often used for storage, transportation, and decoration. They are crafted from various types of wood, offering both strength and aesthetic appeal, and can be customized with different finishes or carvings. Whether used for organizing household items or as rustic décor, wooden boxes bring both functionality and charm to any space.",
+  woodenPallets: "Wooden Pallets",
+  woodenPalletsContent:
+    "Wooden pallets are sturdy, reusable platforms commonly used for transporting goods, stacking items, and storing products in warehouses. Made from durable wood, they are designed to handle heavy loads and facilitate easy movement with forklifts or pallet jacks. Beyond logistics, wooden pallets are also popular in DIY projects and furniture design due to their rustic charm and versatility.",
+  palletCollars: "Pallet Collars",
+  palletCollarsContent:
+    "Pallet collars are versatile wooden frames that can be attached to standard pallets, creating secure, stackable containers for storing and transporting goods. They provide added height and protection, preventing items from shifting or falling during handling. Often used in warehouses and logistics, pallet collars offer a cost-effective, reusable solution for organizing products while maintaining easy access.",
+  cableDrums: "Cable Drums",
+  cableDrumsContent:
+    "Cable drums are cylindrical spools used for winding and storing cables, wires, or hoses, making them easier to transport and handle. Typically made of wood, metal, or plastic, they protect the cables from damage and tangling during storage and transportation. Cable drums are commonly used in industries like construction, telecommunications, and electrical to manage long cable lengths efficiently.",
+  customPackaging: "Custom Packaging",
+  customPackagingContent:
+    "Sometimes the unique design that works is not the one that everyone else is using. The only design that matters is the one you need. We offer Customized packaging products and solutions for a complex environment. Customized packaging is a unique solution, specified, designed and optimized to meet the exact packaging requirements of the application.",
+  productBrandingTitle: "Product Branding",
+  productBrandingContent:
+    "We also offer product branding on all our products. This facilitates the identification, accounting and distribution of products in the warehouse as well as contributes to the recognition of the client's company in the market, which stands as a silent salesman for the client's company.",
   policy: "POLICY",
   contact: "CONTACT",
   title: "VIJAY PALLET & BOX",
   leadingManufacturing: "Leading Manufacturing Company",
-  ofWoodenPallet: "of Wooden pallet & Boxes",
+  ofWoodenPallet: "of Wooden pallet & Boxes,",
+  downloadBrochure: "Download Brochure",
+  cableDrumsPallet: "Cable drums, pallet collars and",
+  specialPurposeWooden: "Special purpose wooden packaging",
   durability: "Durability",
   from: "From",
   exploreTheCollection: "Explore the collection",
@@ -216,7 +283,7 @@ export const ENGLISH_LANGUAGE = {
   vijay: "VIJAY",
   palletAndBoxes: "PALLET & BOXES",
   intro:
-  "Vijay Pallet & Box Manufacturers (India) Pvt. Ltd.is a well-known leading manufacturing company of wooden pallets & boxes, cable drums, pallet collars, and special purpose wooden packaging. A business of manufacturing wooden pallets, boxes and collars with heat treated wood of various sizes and varieties which is basically required for export packing purpose in various heavy engineering industries and also in most of the pharmaceutical companies. Vijay Pallet & Box Manufacturers (India) Pvt. Ltd. is a firm owned by Mr. Abhay P. Thorat, an energetic enthusiastic entrepreneur. Abhay Thorat, while completing his graduation & further post-graduation in Packaging joined hands with his father Mr. Prakash Ke Thorat in wooden packing boxes manufacturing unit named VIJAY BOX WORKS, a renowned firm founded by his grandfather Khashaba Thorat, which is their original business since last 64 years. As nowadays more and more industries are engaged in exporting machines and other items like food, pharmaceuticals etc., the need for heat treated wooden pallets and boxes has also increased inline. This very fact is encouraging for the fast growing business of the Company. Specialty of this firm is to manufacture top class heat treated wooden pallets and boxes as per the requirements of it's esteemed customers. Vijay Pallet and Box has it's head office located at Katraj. Pune The factory is situated At Post Sarola, Taluka Bhor, near Shirwal, Pune and is spread over 1,08,500 sq. feet of area including highly advanced Research and Development facility, state o f art Production facility and dedicated Training Centre for giving periodic training to its staff members.",
+    "Vijay Pallet & Box Manufacturers (India) Pvt. Ltd.is a well-known leading manufacturing company of wooden pallets & boxes, cable drums, pallet collars, and special purpose wooden packaging. A business of manufacturing wooden pallets, boxes and collars with heat treated wood of various sizes and varieties which is basically required for export packing purpose in various heavy engineering industries and also in most of the pharmaceutical companies. Vijay Pallet & Box Manufacturers (India) Pvt. Ltd. is a firm owned by Mr. Abhay P. Thorat, an energetic enthusiastic entrepreneur. Abhay Thorat, while completing his graduation & further post-graduation in Packaging joined hands with his father Mr. Prakash Ke Thorat in wooden packing boxes manufacturing unit named VIJAY BOX WORKS, a renowned firm founded by his grandfather Khashaba Thorat, which is their original business since last 64 years. As nowadays more and more industries are engaged in exporting machines and other items like food, pharmaceuticals etc., the need for heat treated wooden pallets and boxes has also increased inline. This very fact is encouraging for the fast growing business of the Company. Specialty of this firm is to manufacture top class heat treated wooden pallets and boxes as per the requirements of it's esteemed customers. Vijay Pallet and Box has it's head office located at Katraj. Pune The factory is situated At Post Sarola, Taluka Bhor, near Shirwal, Pune and is spread over 1,08,500 sq. feet of area including highly advanced Research and Development facility, state o f art Production facility and dedicated Training Centre for giving periodic training to its staff members.",
   zerodefect: "Zero Defect",
 
   shopByPalletAndCrates: "SHOP BY PALLET & CRATES",
@@ -364,8 +431,10 @@ export const ENGLISH_LANGUAGE = {
   office: "Office",
   officeNumber: "020 - 2690091/93",
   productBranding: "CUSTOMIZED PACKAGING",
-  productBrandingPara1: "Sometimes the unique design that works is not the one that everyone else is using. The only design that matters is the one you need. We offer Customized packaging products and solutions for a complex environment. Customized packaging is a unique solution, specified, designed and optimized to meet the exact packaging requirements of the application.",
-  productBrandingPara2: "We also offer product branding on all our products. This facilitates the identification, accounting and distribution of products in the warehouse as well as contributes to the recognition of the client's company in the market, which stands as a silent salesman for the client's company.",
+  productBrandingPara1:
+    "Sometimes the unique design that works is not the one that everyone else is using. The only design that matters is the one you need. We offer Customized packaging products and solutions for a complex environment. Customized packaging is a unique solution, specified, designed and optimized to meet the exact packaging requirements of the application.",
+  productBrandingPara2:
+    "We also offer product branding on all our products. This facilitates the identification, accounting and distribution of products in the warehouse as well as contributes to the recognition of the client's company in the market, which stands as a silent salesman for the client's company.",
   productBranding2: "PRODUCT BRANDING",
 
   ourCoreValues: "Our Core Values",

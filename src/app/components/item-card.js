@@ -30,10 +30,10 @@ const ItemCard = (props) => {
               <path d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"></path>
             </svg>
           </div>
-          <div className="item-card-container2">
+          {/* <div className="item-card-container2">
             <span className="item-card-currency">{props.currency}</span>
             <span className="item-card-value">{props.value}</span>
-          </div>
+          </div> */}
         </div>
       </div>
       <style jsx>
