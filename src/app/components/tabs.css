@@ -1,0 +1,116 @@
+/* Tabs.css */
+
+/* Basic styling for the container */
+.tabs-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Tab Header */
+.tabs-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  overflow-x: auto; /* Allow scrolling on mobile */
+}
+
+/* Individual Tab */
+.tab-title {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-title:hover {
+  background-color: #e0e0e0;
+}
+
+/* Active Tab */
+.tab-title.active {
+  background-color: #12852f;
+  color: white;
+}
+
+/* Tab Content */
+.tabs-content {
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+  display: grid;                    /* Enable CSS Grid Layout */
+  grid-template-columns: 1fr 1fr;    /* Define two equal columns */
+  gap: 20px;                         /* Add space between the items */
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices (portrait and small screens) */
+@media (max-width: 600px) {
+  .tabs-header {
+    flex-direction: column; /* Stack tabs vertically */
+  }
+
+  .tab-title {
+    width: 100%; /* Make each tab full-width */
+    margin-right: 0;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .tabs-content {
+    padding: 15px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .grid-container {
+    display: grid;                 /* Enable CSS Grid Layout */
+    grid-template-columns: 1fr;    /* Define two equal columns */
+    gap: 20px;                         /* Add space between the items */
+  }
+}
+
+/* Tablets and up (portrait) */
+@media (max-width: 1024px) {
+  .tabs-header {
+    justify-content: space-around; /* Spread out tabs */
+  }
+
+  .tab-title {
+    padding: 12px 20px; /* Adjust padding for tablets */
+  }
+
+  .tabs-content {
+    padding: 20px;
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+}
+
+/* Desktop Screens */
+@media (min-width: 1025px) {
+  .tabs-header {
+    justify-content: flex-start; /* Align tabs to the left */
+  }
+
+  .tab-title {
+    padding: 15px 30px;
+  }
+
+  .tabs-content {
+    padding: 20px;
+    font-size: 18px;
+  }
+}

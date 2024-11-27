@@ -32,6 +32,7 @@ import Modal from "../components/modal";
 import { CATEGORY_DETAIL_LABELS, getCategoryDetail } from "@/utility/dataUtil";
 import { sendEmail } from "@/utility/emailService";
 import BrandCard from "../components/brand-card";
+import ResponsiveTabs from "../components/simple-tab";
 
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -124,9 +125,9 @@ const Dashboard = (props) => {
                         {websiteDetails.vision}
                       </span>
                     </Link>
-                    <Link href="#pallets">
+                    <Link href="#products">
                       <span className="navbar-link">
-                        {websiteDetails.pallets}
+                        {websiteDetails.products}
                       </span>
                     </Link>
                   </div>
@@ -192,9 +193,9 @@ const Dashboard = (props) => {
                         {websiteDetails.vision}
                       </span>
                     </Link>
-                    <Link href="#pallets" onClick={toggleMenu}>
+                    <Link href="#products" onClick={toggleMenu}>
                       <span className="home-text08">
-                        {websiteDetails.pallets}
+                        {websiteDetails.products}
                       </span>
                     </Link>
                     <Link href="#boxes" onClick={toggleMenu}>
@@ -232,14 +233,27 @@ const Dashboard = (props) => {
                         <span>{websiteDetails.leadingManufacturing}</span>
                         <br></br>
                         <span>{websiteDetails.ofWoodenPallet}</span>
+                        <br></br>
+                        <span>{websiteDetails.cableDrumsPallet}</span>
+                        <br></br>
+                        <span>{websiteDetails.specialPurposeWooden}</span>
                       </span>
                     </div>
                     <h1 className="home-text16 Heading-1">
-                      {websiteDetails.durability}
+                      {websiteDetails.title}
                     </h1>
-                    <div className="home-container04">
-                      <span className="home-text17">{websiteDetails.from}</span>
-                      <span className="home-text18">₹999</span>
+                    <div
+                      className="home-container04"
+                      onClick={() =>
+                        window.open(
+                          "/assets/Vijay_Pallet_Brochure.pdf",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <span className="home-text17 download">
+                        {websiteDetails.downloadBrochure}
+                      </span>
                     </div>
                     <div className="home-btn-group">
                       <Link href="#trending">
@@ -258,6 +272,8 @@ const Dashboard = (props) => {
                 </div>
               </div>
             </div>
+            <br />
+            <br />
             <br />
             <section id="whatweprovide">
               <div className="home-banner">
@@ -292,6 +308,9 @@ const Dashboard = (props) => {
                 </div>
               </div>
             </section>
+            <br />
+            <br />
+            <br />
             <section id="about">
               <div className="home-banner">
                 <div className="home-container05">
@@ -306,17 +325,14 @@ const Dashboard = (props) => {
               </div>
               <div className="home-container06 max-width-container">
                 <div className="home-container07">
-                  <h3 className="point-title">We offer heat treatment</h3>
-                  <h3 className="point-title">
-                    We supply wooden pallets and boxes
-                  </h3>
-                  <h3 className="point-title">We produce pallet collars</h3>
-                  <h3 className="point-title">
-                    We offer customized packaging products
-                  </h3>
+                  <h3 className="point-title">{websiteDetails.whatWeDoP1}</h3>
+                  <h3 className="point-title">{websiteDetails.whatWeDoP2}</h3>
+                  <h3 className="point-title">{websiteDetails.whatWeDoP3}</h3>
+                  <h3 className="point-title">{websiteDetails.whatWeDoP4}</h3>
                 </div>
               </div>
             </section>
+            <br />
             <br />
             <br />
             <section id="vision">
@@ -457,11 +473,14 @@ const Dashboard = (props) => {
               </section>
               {/* <FeaturesSection sectionTitle="Our Values" data={featureListData} /> */}
             </section>
+            <br />
+            <br />
+            <br />
             <section id="policy">
               <div className="home-full-width-banner section-container">
                 <div className="home-left4">
                   <div className="home-content">
-                    <span className="home-text29">
+                    <span className="home-textQuality">
                       {websiteDetails.qualityPolicy}
                     </span>
                     <span
@@ -497,30 +516,45 @@ const Dashboard = (props) => {
               </div>
             </section>
             <br />
+            <br />
+            <br />
             <section id="Zero defect philosophy">
               <div className="home-banner">
                 <div className="home-container05">
                   <span className="home-text20">
-                    <h3>Zero Defect</h3>
-                    <h3>Philosophy</h3>
+                    <h3>{websiteDetails.zeroDefect}</h3>
+                    <h3>{websiteDetails.philosophy}</h3>
                   </span>
                 </div>
               </div>
               <div className="home-container06 max-width-container">
                 <div className="home-container07">
                   <h3 className="point-title">
-                    Zero complaints - First Time OK
+                    {websiteDetails.zeroComplaints}
                   </h3>
                   <h3 className="point-title">
-                    Zero inefficiency - Shorter Development Lead Time
+                    {websiteDetails.zeroInefficiency}
                   </h3>
+                  <h3 className="point-title">{websiteDetails.zeroWastage}</h3>
                   <h3 className="point-title">
-                    Zero wastage - Low Manufacturing Cost
-                  </h3>
-                  <h3 className="point-title">
-                    Zero pollution - Environment Sensitive
+                    {websiteDetails.zeroPollution}
                   </h3>
                 </div>
+              </div>
+            </section>
+            <br />
+            <br />
+            <br />
+            <section id="products">
+              <div className="home-banner">
+                <div className="home-container05">
+                  <span className="home-text20">
+                    <h3>{websiteDetails.products}</h3>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <ResponsiveTabs websiteDetails={websiteDetails} />
               </div>
             </section>
             <div className="section-container column">
@@ -676,7 +710,7 @@ const Dashboard = (props) => {
                   subtitle={websiteDetails.productBrandingPara1}
                 ></SectionHeading>
                 <SectionHeading
-                  heading={websiteDetails.productBranding2}  
+                  heading={websiteDetails.productBranding2}
                   subtitle={websiteDetails.productBrandingPara2}
                 ></SectionHeading>
               </section>

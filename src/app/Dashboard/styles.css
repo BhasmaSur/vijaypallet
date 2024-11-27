@@ -181,6 +181,7 @@
   flex-direction: column;
 }
 .home-container02 {
+  margin-top: 20px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -434,6 +435,15 @@
   letter-spacing: 1em;
   text-transform: uppercase;
 }
+
+.home-products {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
 .home-container06 {
   flex: 0 0 auto;
   display: flex;
@@ -566,6 +576,21 @@
   color: rgba(0, 0, 0, 1);
   height: auto;
   margin: 0 0 16px 0;
+  font-size: 28px;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 500px;
+  line-height: 20px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.home-textQuality {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  margin: 80px 0 40px 0;
   font-size: 28px;
   align-self: auto;
   font-style: normal;

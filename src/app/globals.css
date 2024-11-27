@@ -20,6 +20,7 @@
   --dl-color-gray-black60: #00000099;
   --dl-color-gray-black80: #000000cc;
   --dl-color-pallet-green: #dfe7ddff;
+  --dl-color-pallet-title: #12852f;
   --dl-size-size-maxwidth: 1328px;
   --dl-color-pallet-yellow: #efc14cff;
   --dl-radius-radius-round: 50%;
@@ -127,7 +128,7 @@
   color: var(--dl-color-pallet-yellow);
 }
 .navbar-logo-title {
-  color: var(--dl-color-gray-black);
+  color: var(--dl-color-pallet-title);
   cursor: pointer;
   height: auto;
   font-size: 24px;
@@ -138,7 +139,7 @@
   margin-left: var(--dl-space-space-fourunits);
   margin-right: var(--dl-space-space-fourunits);
   letter-spacing: 0.4em;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .navbar-logo-title:hover {
   color: rgba(239, 193, 76, 1);
@@ -178,6 +179,16 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.download {
+  cursor: pointer;
+}
+
+.download:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--dl-color-pallet-title);
 }
 @media(max-width: 991px) {
   .navbar-logo-title {
