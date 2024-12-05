@@ -9,6 +9,7 @@ export const MARATHI_LANGUAGE = {
   vision: "व्हिजन",
   pallets: "पॅलेट्स",
   boxes: "बॉक्स",
+  productGallery: "उत्पादन गॅलरी",
   policy: "धोरण",
   contact: "संपर्क",
   title: "विजय पॅलेट आणि बॉक्स",
@@ -41,7 +42,8 @@ export const MARATHI_LANGUAGE = {
   cableDrums: "केबल ड्रम्स",
   cableDrumsContent:
     "केबल ड्रम हे बेलनाकार स्पूल आहेत जे केबल्स, वायर्स किंवा होसेस वळण आणि साठवण्यासाठी वापरले जातात, ज्यामुळे त्यांची वाहतूक आणि हाताळणी सुलभ होते. सामान्यत: लाकूड, धातू किंवा प्लॅस्टिकचे बनलेले, ते साठवण आणि वाहतुकीदरम्यान केबलचे नुकसान आणि गोंधळापासून संरक्षण करतात. केबल ड्रम सामान्यतः बांधकाम, दूरसंचार आणि इलेक्ट्रिकल सारख्या उद्योगांमध्ये लांब केबल लांबी कार्यक्षमतेने व्यवस्थापित करण्यासाठी वापरले जातात",
-  customPackaging: "सानुकूल पॅकेजिंग",
+  custom: "सानुकूल",
+  packaging: "पॅकेजिंग",
   customPackagingContent:
     "कधीकधी कार्य करणारी अद्वितीय रचना इतर प्रत्येकजण वापरत नाही. आपल्याला आवश्यक असलेली एकच रचना महत्त्वाची आहे. आम्ही जटिल वातावरणासाठी सानुकूलित पॅकेजिंग उत्पादने आणि उपाय ऑफर करतो. सानुकूलित पॅकेजिंग हे एक अद्वितीय समाधान आहे, जे अनुप्रयोगाच्या अचूक पॅकेजिंग आवश्यकता पूर्ण करण्यासाठी निर्दिष्ट, डिझाइन केलेले आणि ऑप्टिमाइझ केलेले आहे",
   productBrandingTitle: "उत्पादन ब्रँडिंग",
@@ -60,7 +62,7 @@ export const MARATHI_LANGUAGE = {
   palletAndBoxes: "पॅलेट आणि बॉक्स",
   intro:
     "सहा दशकांहून अधिक काळ पसरलेला वारसा घेऊन, विजय पॅलेट आणि बॉक्स मॅन्युफॅक्चरर्स (इंडिया) प्रा. लि. लाकूड पॅकेजिंग उद्योगातील एक प्रमुख नाव आहे. विविध औद्योगिक गरजांसाठी तयार केलेले उच्च दर्जाचे लाकडी पॅलेट, बॉक्स, केबल ड्रम आणि पॅलेट कॉलर तयार करण्यात आमचे कौशल्य आहे. जड अभियांत्रिकी आणि फार्मास्युटिकल उद्योगांच्या कठोर आवश्यकता पूर्ण करणाऱ्या उष्णता-उपचार केलेल्या लाकडी पॅकेजिंग सोल्यूशन्समध्ये आम्ही तज्ञ आहोत. श्री. अभय पी. थोरात यांच्या गतिमान नेतृत्वाखाली, नाविन्यपूर्ण आणि गुणवत्तेसाठी आमची बांधिलकी आम्हाला निर्यात पॅकिंगमध्ये गुंतलेल्या व्यवसायांसाठी एक विश्वासू भागीदार बनवते आहे. तुमच्या मौल्यवान उत्पादनांचे संरक्षण आणि सुरक्षित करण्यासाठी डिझाइन केलेले आमचे टिकाऊ, सानुकूल-निर्मित लाकडी पॅकेजिंग उपाय शोधा",
-  shopByPalletAndCrates: "पॅलेट आणि क्रेट्स द्वारे खरेदी करा",
+  shopByPalletAndCrates: "पॅलेट द्वारे खरेदी करा",
   shopByCategories:
     "तुम्हाला स्वारस्य असलेल्या श्रेणींवर आधारित खरेदी सुरू करा",
   europeanWayPallet: "युरोपियन 4 वे पॅलेट",
@@ -68,7 +70,7 @@ export const MARATHI_LANGUAGE = {
   fourwatCloseBoardPallet: "फोरवे क्लोज बोर्ड पॅलेट",
   rubberWoodCrate: "रबर लाकडी क्रेट",
   woodenPackagingCrate: "लाकडी पॅकेजिंग क्रेट",
-  trendingItems: "केबल ड्रम आणि ट्रेंडिंग आयटम",
+  trendingItems: "इतर उत्पादने",
   exploreOurMostTrending:
     "वापरण्यास सुलभ, वापरकर्ता अनुकूल, केबल्स आणि तारांची सुलभ वाहतूक",
   plywoodBox: "प्लायवुड बॉक्स",
@@ -204,6 +206,8 @@ export const MARATHI_LANGUAGE = {
   office: "कार्यालय",
   officeNumber: "०२० - २६९००९१/९३",
   productBranding: "सानुकूलित पॅकेजिंग",
+  product: "उत्पादन",
+  branding:"ब्रँडिंग",
   productBrandingPara1:
     "कधीकधी काम करणारी युनिक डिझाईन इतर प्रत्येकजण वापरत नसलेली असते. तुम्हाला आवश्यक असलेली एकमेव रचना महत्त्वाची असते. आम्ही सानुकूलित पॅकेजिंग उत्पादने आणि जटिल वातावरणासाठी उपाय ऑफर करतो. सानुकूलित पॅकेजिंग हे एक अद्वितीय समाधान आहे, निर्दिष्ट केलेले, डिझाइन केलेले आणि अनुप्रयोगाच्या अचूक पॅकेजिंग आवश्यकता पूर्ण करण्यासाठी ऑप्टिमाइझ केले आहे.",
   productBrandingPara2:
@@ -233,6 +237,7 @@ export const ENGLISH_LANGUAGE = {
   vision: "VISION",
   pallets: "PALLETS",
   boxes: "BOXES",
+  productGallery: "PRODUCT GALLERY",
   boxesTitle: "Boxes",
   products: "PRODUCTS",
   whatWeDoP1 : "We offer heat treatment",
@@ -257,9 +262,13 @@ export const ENGLISH_LANGUAGE = {
   cableDrumsContent:
     "Cable drums are cylindrical spools used for winding and storing cables, wires, or hoses, making them easier to transport and handle. Typically made of wood, metal, or plastic, they protect the cables from damage and tangling during storage and transportation. Cable drums are commonly used in industries like construction, telecommunications, and electrical to manage long cable lengths efficiently.",
   customPackaging: "Custom Packaging",
+  custom: "CUSTOM",
+  packaging: "PACKAGING",
   customPackagingContent:
     "Sometimes the unique design that works is not the one that everyone else is using. The only design that matters is the one you need. We offer Customized packaging products and solutions for a complex environment. Customized packaging is a unique solution, specified, designed and optimized to meet the exact packaging requirements of the application.",
   productBrandingTitle: "Product Branding",
+  product: "PRODUCT",
+  branding:"BRANDING",
   productBrandingContent:
     "We also offer product branding on all our products. This facilitates the identification, accounting and distribution of products in the warehouse as well as contributes to the recognition of the client's company in the market, which stands as a silent salesman for the client's company.",
   policy: "POLICY",
@@ -286,7 +295,7 @@ export const ENGLISH_LANGUAGE = {
     "Vijay Pallet & Box Manufacturers (India) Pvt. Ltd.is a well-known leading manufacturing company of wooden pallets & boxes, cable drums, pallet collars, and special purpose wooden packaging. A business of manufacturing wooden pallets, boxes and collars with heat treated wood of various sizes and varieties which is basically required for export packing purpose in various heavy engineering industries and also in most of the pharmaceutical companies. Vijay Pallet & Box Manufacturers (India) Pvt. Ltd. is a firm owned by Mr. Abhay P. Thorat, an energetic enthusiastic entrepreneur. Abhay Thorat, while completing his graduation & further post-graduation in Packaging joined hands with his father Mr. Prakash Ke Thorat in wooden packing boxes manufacturing unit named VIJAY BOX WORKS, a renowned firm founded by his grandfather Khashaba Thorat, which is their original business since last 64 years. As nowadays more and more industries are engaged in exporting machines and other items like food, pharmaceuticals etc., the need for heat treated wooden pallets and boxes has also increased inline. This very fact is encouraging for the fast growing business of the Company. Specialty of this firm is to manufacture top class heat treated wooden pallets and boxes as per the requirements of it's esteemed customers. Vijay Pallet and Box has it's head office located at Katraj. Pune The factory is situated At Post Sarola, Taluka Bhor, near Shirwal, Pune and is spread over 1,08,500 sq. feet of area including highly advanced Research and Development facility, state o f art Production facility and dedicated Training Centre for giving periodic training to its staff members.",
   zerodefect: "Zero Defect",
 
-  shopByPalletAndCrates: "SHOP BY PALLET & CRATES",
+  shopByPalletAndCrates: "SHOP BY PALLET",
   shopByCategories:
     "Start shopping based on the categories you are interested in",
   europeanWayPallet: "European 4 Way Pallet",
@@ -294,7 +303,7 @@ export const ENGLISH_LANGUAGE = {
   fourwatCloseBoardPallet: "Fourway Close Board Pallet",
   rubberWoodCrate: "Rubber Wood Crate",
   woodenPackagingCrate: "Wooden Packaging Crate",
-  trendingItems: "Cable Drums & Trending Items",
+  trendingItems: "Other Products",
   exploreOurMostTrending:
     "Easy to use, User Friendly, Easy transportation of cables and wires",
   plywoodBox: "Plywood Box",

@@ -5,12 +5,13 @@ import skidded from "../image/skidded";
 import pinewoodpallet from "../image/pinewoodpallet";
 import woodenpackagingcrate from "../image/woodenpackagingcrate";
 import cabledrums from "../image/cabledrums";
+import standard from "../image/standard";
 
 const ResponsiveTabs = ({ websiteDetails }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    { title: "boxesTitle", content: "boxesContent", imgSrc: "nailless" },
+    { title: "boxesTitle", content: "boxesContent" },
     { title: "woodenPallets", content: "woodenPalletsContent" },
     { title: "palletCollars", content: "palletCollarsContent" },
     { title: "cableDrums", content: "cableDrumsContent" },
@@ -21,11 +22,11 @@ const ResponsiveTabs = ({ websiteDetails }) => {
   const imgSrc = useMemo(() => {
     switch (activeTab) {
       case 0:
-        return nailless;
+        return standard;
       case 1:
         return pinewoodpallet;
       case 2:
-        return "./assets/palletColor.webp";
+        return "./assets/palletbox.png";
       case 3:
         return cabledrums;
       case 4:
@@ -56,14 +57,21 @@ const ResponsiveTabs = ({ websiteDetails }) => {
 
       {/* Tab Content */}
       <div className="tabs-content">
-        <div class="grid-container">
-          <div class="grid-item">
-            <img src={imgSrc} />
+        {activeTab !== 4 && (
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src={imgSrc} />
+            </div>
+            <div class="grid-item">
+              <p>{websiteDetails[tabs[activeTab].content]}</p>
+            </div>
           </div>
+        )}
+        {activeTab === 4 && (
           <div class="grid-item">
             <p>{websiteDetails[tabs[activeTab].content]}</p>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
