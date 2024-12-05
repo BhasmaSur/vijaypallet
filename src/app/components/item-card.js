@@ -13,7 +13,7 @@ const ItemCard = (props) => {
         />
         <div className="item-card-container">
           <h3 className="item-card-text">{props.name}</h3>
-          <div className="item-card-container1">
+          {/* <div className="item-card-container1">
             <svg viewBox="0 0 1024 1024" className="item-card-icon">
               <path d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"></path>
             </svg>
@@ -29,7 +29,7 @@ const ItemCard = (props) => {
             <svg viewBox="0 0 1024 1024" className="item-card-icon08">
               <path d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"></path>
             </svg>
-          </div>
+          </div> */}
           {/* <div className="item-card-container2">
             <span className="item-card-currency">{props.currency}</span>
             <span className="item-card-value">{props.value}</span>

@@ -33,6 +33,7 @@ import { CATEGORY_DETAIL_LABELS, getCategoryDetail } from "@/utility/dataUtil";
 import { sendEmail } from "@/utility/emailService";
 import BrandCard from "../components/brand-card";
 import ResponsiveTabs from "../components/simple-tab";
+import SectionInfo from "../components/section-info";
 
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -106,6 +107,16 @@ const Dashboard = (props) => {
           <Head>
             <title>{websiteDetails.title}</title>
             <meta property="og:title" content="Vijay Pallet & Box" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+              rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mukta:wght@300&family=Roboto+Slab:wght@100..900&display=swap"
+              rel="stylesheet"
+            ></link>
           </Head>
           <div className="home-navbar">
             <header
@@ -132,12 +143,12 @@ const Dashboard = (props) => {
                     </Link>
                   </div>
                   <span className="navbar-logo-title">
-                    {websiteDetails.title}
+                    <img src="./assets/logovijay.png" width={300} />
                   </span>
                   <div className="home-right">
                     <Link href="#boxes">
                       <span className="navbar-link">
-                        {websiteDetails.boxes}
+                        {websiteDetails.productGallery}
                       </span>
                     </Link>
                     <Link href="#policy">
@@ -170,7 +181,7 @@ const Dashboard = (props) => {
                 <div className="home-nav">
                   <div className="home-container02">
                     <span className="home-logo-center1">
-                      {websiteDetails.title}
+                      <img src="./assets/logovijay.png" width={300} />
                     </span>
                     <div
                       data-role="CloseMobileMenu"
@@ -200,7 +211,7 @@ const Dashboard = (props) => {
                     </Link>
                     <Link href="#boxes" onClick={toggleMenu}>
                       <span className="home-text09">
-                        {websiteDetails.boxes}
+                        {websiteDetails.productGallery}
                       </span>
                     </Link>
                     <Link href="#policy" onClick={toggleMenu}>
@@ -239,7 +250,7 @@ const Dashboard = (props) => {
                         <span>{websiteDetails.specialPurposeWooden}</span>
                       </span>
                     </div>
-                    <h1 className="home-text16 Heading-1">
+                    <h1 className="home-text16 Heading-title1">
                       {websiteDetails.title}
                     </h1>
                     <div
@@ -314,13 +325,13 @@ const Dashboard = (props) => {
             <section id="about">
               <div className="home-banner">
                 <div className="home-container05">
-                  {/* <h3 className="home-text19 Heading-3">
-                      {websiteDetails.vijay}
-                    </h3> */}
-                  <span className="home-text20">
+                  <h3 className="home-text19 Heading-custom">
+                    {websiteDetails.whatwedo}
+                  </h3>
+                  {/* <span className="home-text20 ">
                     <span></span>
                     <span>{websiteDetails.whatwedo}</span>
-                  </span>
+                  </span> */}
                 </div>
               </div>
               <div className="home-container06 max-width-container">
@@ -521,8 +532,9 @@ const Dashboard = (props) => {
             <section id="Zero defect philosophy">
               <div className="home-banner">
                 <div className="home-container05">
-                  <span className="home-text20">
+                  <span className="home-text19 Heading-custom">
                     <h3>{websiteDetails.zeroDefect}</h3>
+                    <br />
                     <h3>{websiteDetails.philosophy}</h3>
                   </span>
                 </div>
@@ -548,7 +560,7 @@ const Dashboard = (props) => {
             <section id="products">
               <div className="home-banner">
                 <div className="home-container05">
-                  <span className="home-text20">
+                  <span className="home-text19 Heading-custom">
                     <h3>{websiteDetails.products}</h3>
                   </span>
                 </div>
@@ -629,18 +641,6 @@ const Dashboard = (props) => {
                     CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET
                   }
                 ></CategoryCard>
-                <CategoryCard
-                  name={websiteDetails.rubberWoodCrate}
-                  categoryImg={rubberwoordcrate}
-                  onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.RUBBER_WOOD_CRATE}
-                ></CategoryCard>
-                <CategoryCard
-                  name={websiteDetails.woodenPackagingCrate}
-                  categoryImg={woodenpackagingcrate}
-                  onClickCategory={onClickCategory}
-                  categoryCode={CATEGORY_DETAIL_LABELS.WOODEN_PACKAGING_CRATE}
-                ></CategoryCard>
               </div>
             </div>
             <section id="trending">
@@ -705,14 +705,16 @@ const Dashboard = (props) => {
           <div className="section-container column">
             <div className="max-width-container">
               <section id="boxes">
-                <SectionHeading
-                  heading={websiteDetails.productBranding}
+                <SectionInfo
+                  heading1={websiteDetails.custom}
+                  heading2={websiteDetails.packaging}
                   subtitle={websiteDetails.productBrandingPara1}
-                ></SectionHeading>
-                <SectionHeading
-                  heading={websiteDetails.productBranding2}
+                ></SectionInfo>
+                <SectionInfo
+                  heading1={websiteDetails.product}
+                  heading2={websiteDetails.branding}
                   subtitle={websiteDetails.productBrandingPara2}
-                ></SectionHeading>
+                ></SectionInfo>
               </section>
               <div className="home-cards-container">
                 <BrandCard
