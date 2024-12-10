@@ -12,7 +12,8 @@ export const MARATHI_LANGUAGE = {
   productGallery: "उत्पादन गॅलरी",
   policy: "धोरण",
   contact: "संपर्क",
-  title: "विजय पॅलेट आणि बॉक्स",
+  title: "विजय पॅलेट आणि बॉक्स मॅन्युफॅक्चरर्स इंडिया प्रा. लि.",
+  shopByPalletCollarsDesc : "आमचे पॅलेट कॉलर फायटोसॅनिटरी नियमांची पूर्तता करतात, ISPM 15 अनुरूप (हीट ट्रीटेड, KD, DB) आणि म्हणून ते जगभरात पाठवले जाऊ शकतात",
   whatWeDoP1 : "आम्ही उष्णता उपचार ऑफर करतो",
   whatWeDoP2 : "आम्ही लाकडी पॅलेट आणि बॉक्स पुरवतो",
   whatWeDoP3 : "आम्ही पॅलेट कॉलर तयार करतो",
@@ -273,7 +274,7 @@ export const ENGLISH_LANGUAGE = {
     "We also offer product branding on all our products. This facilitates the identification, accounting and distribution of products in the warehouse as well as contributes to the recognition of the client's company in the market, which stands as a silent salesman for the client's company.",
   policy: "POLICY",
   contact: "CONTACT",
-  title: "VIJAY PALLET & BOX",
+  title: "VIJAY PALLET & BOX MANUFACTURERS INDIA PVT. LTD.",
   leadingManufacturing: "Leading Manufacturing Company",
   ofWoodenPallet: "of Wooden pallet & Boxes,",
   downloadBrochure: "Download Brochure",
@@ -296,6 +297,8 @@ export const ENGLISH_LANGUAGE = {
   zerodefect: "Zero Defect",
 
   shopByPalletAndCrates: "SHOP BY PALLET",
+  shopByPalletAndCollars: "SHOP BY PALLET COLLARS",
+  shopByPalletCollarsDesc: "Our Pallet Collars meet phytosanitary regulations, ISPM 15 compliant (Heat Treated, KD, DB) and therefore can be shipped all over the world",
   shopByCategories:
     "Start shopping based on the categories you are interested in",
   europeanWayPallet: "European 4 Way Pallet",

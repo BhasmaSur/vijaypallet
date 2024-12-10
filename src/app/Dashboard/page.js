@@ -34,6 +34,7 @@ import { sendEmail } from "@/utility/emailService";
 import BrandCard from "../components/brand-card";
 import ResponsiveTabs from "../components/simple-tab";
 import SectionInfo from "../components/section-info";
+import PalletCollarCard from "../components/pallet-collar-card";
 
 const Dashboard = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -641,6 +642,34 @@ const Dashboard = (props) => {
                     CATEGORY_DETAIL_LABELS.FOUR_WAY_CLOSE_BOARD_PALLET
                   }
                 ></CategoryCard>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div className="max-width-container">
+              <section id="pallets">
+                <SectionHeading
+                  heading={websiteDetails.shopByPalletAndCollars}
+                  subtitle={websiteDetails.shopByPalletCollarsDesc}
+                ></SectionHeading>
+              </section>
+              <div className="home-cards-container">
+                <PalletCollarCard
+                  name={websiteDetails.europeanWayPallet}
+                  categoryImg={"./assets/pc1.png"}
+                ></PalletCollarCard>
+                <PalletCollarCard
+                  name={websiteDetails.pineWoodPallet}
+                  categoryImg={"./assets/pc2.png"}
+                ></PalletCollarCard>
+                <PalletCollarCard
+                  name={websiteDetails.fourwatCloseBoardPallet}
+                  categoryImg={"./assets/pc3.png"}
+                ></PalletCollarCard>
+                <PalletCollarCard
+                  name={websiteDetails.fourwatCloseBoardPallet}
+                  categoryImg={"./assets/pc4.png"}
+                ></PalletCollarCard>
               </div>
             </div>
             <section id="trending">
