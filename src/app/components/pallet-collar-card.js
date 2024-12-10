@@ -2,12 +2,10 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-const CategoryCard = (props) => {
-  const { onClickCategory, categoryCode } = props;
+const PalletCollarCard = (props) => {
   return (
     <>
       <div
-        onClick={() => onClickCategory(categoryCode)}
         className="category-card-category-card"
       >
         <img
@@ -15,7 +13,6 @@ const CategoryCard = (props) => {
           src={props.categoryImg}
           className="category-card-image"
         />
-        <span className="category-card-text">{props.name}</span>
       </div>
       <style jsx>
         {`
@@ -30,7 +27,7 @@ const CategoryCard = (props) => {
           }
           .category-card-category-card:hover {
             color: var(--dl-color-pallet-yellow);
-            transform: scale(2);
+            transform: scale(4);
           }
           .category-card-image {
             width: 120px;
@@ -61,17 +58,15 @@ const CategoryCard = (props) => {
   );
 };
 
-CategoryCard.defaultProps = {
+PalletCollarCard.defaultProps = {
   categoryImg:
     "https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxjaGFpcnxlbnwwfHx8fDE2NTI4MTgxODk&ixlib=rb-1.2.1&w=1500",
   imageAlt: "image",
-  name: "Desks",
 };
 
-CategoryCard.propTypes = {
+PalletCollarCard.propTypes = {
   categoryImg: PropTypes.string,
   imageAlt: PropTypes.string,
-  name: PropTypes.string,
 };
 
-export default CategoryCard;
+export default PalletCollarCard;
